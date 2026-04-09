@@ -562,7 +562,18 @@ def main():
         # 7. Publicar no GitHub
         publicar_no_github()
 
-        # 8. Resumo
+        # 8. Atualizar tabela no Omni (Opção A)
+        try:
+            from atualizar_omni import main as atualizar_omni_main
+            log("Iniciando atualização da tabela no Omni...")
+            atualizar_omni_main()
+        except ImportError:
+            log("Módulo atualizar_omni não encontrado. Pulando atualização do Omni.")
+        except Exception as e:
+            log(f"Erro ao atualizar Omni (não crítico): {e}")
+            log("A base de conhecimento no GitHub foi atualizada normalmente.")
+
+        # 9. Resumo
         log("-" * 50)
         log("RESUMO DA EXECUÇÃO:")
         log(f"  Veículos no estoque: {len(estoque)}")
