@@ -19,10 +19,9 @@ from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, NoSuchElementException
+from selenium.common.exceptions import TimeoutException
 
 # ============================================================
 # CONFIGURAÇÕES
@@ -33,11 +32,15 @@ PHONE_NUMBER = "19999041499"
 
 OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
 COOKIES_FILE = os.path.join(OUTPUT_DIR, "omni_cookies.pkl")
+STORAGE_FILE = os.path.join(OUTPUT_DIR, "omni_storage.json")
 ESTOQUE_JSON = os.path.join(OUTPUT_DIR, "estoque_atual.json")
 LOG_FILE = os.path.join(OUTPUT_DIR, "omni_update_log.txt")
 
 # Colunas da tabela no Omni (na ordem exata)
-COLUNAS_OMNI = ["Marca", "Modelo", "Ano", "Preco", "Cor", "KM", "Tipo"]
+COLUNAS_OMNI = [
+    "Marca", "Modelo", "Ano", "Preco", "Cor", "KM",
+    "Tipo", "Cambio", "Combustivel", "Descricao", "Opcionais", "Link"
+]
 
 
 def log(msg):
@@ -70,12 +73,11 @@ def criar_driver(headless=True):
 
 
 def salvar_cookies(driver):
-    """Salva os cookies do navegador em arquivo."""
+    """Salva cookies e storage do navegador."""
     cookies = driver.get_cookies()
     with open(COOKIES_FILE, "wb") as f:
         pickle.dump(cookies, f)
-    
-    # Salvar também localStorage e sessionStorage
+
     local_storage = driver.execute_script(
         "var items = {}; for (var i = 0; i < localStorage.length; i++) {"
         "var key = localStorage.key(i); items[key] = localStorage.getItem(key);} return items;"
@@ -84,14 +86,13 @@ def salvar_cookies(driver):
         "var items = {}; for (var i = 0; i < sessionStorage.length; i++) {"
         "var key = sessionStorage.key(i); items[key] = sessionStorage.getItem(key);} return items;"
     )
-    
-    storage_file = os.path.join(OUTPUT_DIR, "omni_storage.json")
-    with open(storage_file, "w", encoding="utf-8") as f:
+
+    with open(STORAGE_FILE, "w", encoding="utf-8") as f:
         json.dump({
             "localStorage": local_storage,
             "sessionStorage": session_storage
         }, f, ensure_ascii=False)
-    
+
     log("Cookies e storage salvos com sucesso.")
 
 
@@ -99,40 +100,35 @@ def carregar_cookies(driver):
     """Carrega cookies salvos no navegador."""
     if not os.path.exists(COOKIES_FILE):
         return False
-    
+
     try:
-        # Primeiro navegar para o domínio para poder definir cookies
         driver.get(OMNI_URL)
         time.sleep(2)
-        
-        # Carregar cookies
+
         with open(COOKIES_FILE, "rb") as f:
             cookies = pickle.load(f)
-        
+
         for cookie in cookies:
             try:
-                # Remover campos que podem causar erro
                 for key in ["sameSite", "expiry"]:
                     cookie.pop(key, None)
                 driver.add_cookie(cookie)
             except Exception:
                 pass
-        
-        # Carregar localStorage
-        storage_file = os.path.join(OUTPUT_DIR, "omni_storage.json")
-        if os.path.exists(storage_file):
-            with open(storage_file, "r", encoding="utf-8") as f:
+
+        if os.path.exists(STORAGE_FILE):
+            with open(STORAGE_FILE, "r", encoding="utf-8") as f:
                 storage = json.load(f)
-            
+
             for key, value in storage.get("localStorage", {}).items():
                 try:
-                    escaped_value = value.replace("'", "\\'").replace("\n", "\\n")
+                    escaped_value = json.dumps(value)[1:-1]
                     driver.execute_script(
                         f"localStorage.setItem('{key}', '{escaped_value}');"
                     )
                 except Exception:
                     pass
-        
+
         log("Cookies e storage carregados com sucesso.")
         return True
     except Exception as e:
@@ -145,16 +141,15 @@ def fazer_login(driver):
     log("Iniciando login no Omni...")
     driver.get(f"{OMNI_URL}/auth/sign-in")
     time.sleep(3)
-    
-    # Verificar se já está logado
+
     if "/auth/" not in driver.current_url:
         log("Já está logado!")
         return True
-    
+
     # Preencher telefone
     try:
         phone_input = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "input[type='tel'], input[formcontrolname='phone'], input"))
+            EC.presence_of_element_located((By.CSS_SELECTOR, "input"))
         )
         phone_input.clear()
         phone_input.send_keys(PHONE_NUMBER)
@@ -163,7 +158,7 @@ def fazer_login(driver):
     except Exception as e:
         log(f"Erro ao inserir telefone: {e}")
         return False
-    
+
     # Clicar em Entrar
     try:
         entrar_btn = driver.find_element(By.XPATH, "//button[contains(text(), 'Entrar')]")
@@ -173,38 +168,32 @@ def fazer_login(driver):
     except Exception as e:
         log(f"Erro ao clicar em Entrar: {e}")
         return False
-    
-    # Solicitar código OTP ao usuário
+
+    # Solicitar código OTP
     print("\n" + "=" * 50)
     print("CÓDIGO OTP NECESSÁRIO")
     print("Um código foi enviado para o seu WhatsApp/SMS.")
     print("=" * 50)
     otp_code = input("Digite o código de 6 dígitos: ").strip()
-    
+
     if len(otp_code) != 6 or not otp_code.isdigit():
         log("Código OTP inválido!")
         return False
-    
+
     # Preencher os 6 campos do OTP
     try:
-        otp_inputs = driver.find_elements(By.CSS_SELECTOR, "input[maxlength='1'], input.otp-input")
+        otp_inputs = driver.find_elements(By.CSS_SELECTOR, "input[maxlength='1']")
         if len(otp_inputs) >= 6:
             for i, digit in enumerate(otp_code):
                 otp_inputs[i].clear()
                 otp_inputs[i].send_keys(digit)
                 time.sleep(0.2)
-        else:
-            # Tentar campo único
-            otp_single = driver.find_element(By.CSS_SELECTOR, "input[type='text'], input[type='number']")
-            otp_single.clear()
-            otp_single.send_keys(otp_code)
-        
         log("Código OTP inserido.")
         time.sleep(1)
     except Exception as e:
         log(f"Erro ao inserir OTP: {e}")
         return False
-    
+
     # Clicar em Entrar novamente
     try:
         entrar_btn = driver.find_element(By.XPATH, "//button[contains(text(), 'Entrar')]")
@@ -212,8 +201,7 @@ def fazer_login(driver):
         time.sleep(5)
     except Exception:
         pass
-    
-    # Verificar se login foi bem-sucedido
+
     if "/auth/" not in driver.current_url:
         log("Login realizado com sucesso!")
         salvar_cookies(driver)
@@ -224,289 +212,257 @@ def fazer_login(driver):
 
 
 def verificar_sessao(driver):
-    """Verifica se a sessão está ativa navegando para a tabela."""
+    """Verifica se a sessão está ativa."""
     log("Verificando sessão...")
     driver.get(TABLE_URL)
     time.sleep(5)
-    
-    # Se redirecionou para login, sessão expirou
+
     if "/auth/" in driver.current_url:
         log("Sessão expirada. Necessário novo login.")
         return False
-    
-    # Verificar se a tabela carregou
+
     try:
         WebDriverWait(driver, 15).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "table, .mat-table, tr"))
+            EC.presence_of_element_located((By.CSS_SELECTOR, "table, tbody, tr"))
         )
         log("Sessão ativa. Tabela carregada.")
         return True
     except TimeoutException:
-        log("Tabela não carregou. Verificando...")
         if "/auth/" in driver.current_url:
             return False
-        # Pode estar em outra página, tentar novamente
         driver.get(TABLE_URL)
         time.sleep(5)
         return "/auth/" not in driver.current_url
 
 
 def limpar_tabela(driver):
-    """Seleciona todas as linhas da tabela e as remove."""
+    """Seleciona todas as linhas e exclui via interface."""
     log("Limpando tabela existente...")
-    
-    # Aguardar tabela carregar
     time.sleep(3)
-    
-    # Contar linhas existentes
-    rows = driver.find_elements(By.CSS_SELECTOR, "tbody tr, tr.mat-row")
-    total_rows = len(rows)
-    log(f"  {total_rows} linhas encontradas na tabela.")
-    
-    if total_rows == 0:
+
+    # Contar linhas
+    rows = driver.find_elements(By.CSS_SELECTOR, "tbody tr")
+    total = len(rows)
+    log(f"  {total} linhas encontradas.")
+
+    if total == 0:
         log("  Tabela já está vazia.")
         return True
-    
-    # Selecionar todas as linhas clicando no checkbox do header
+
+    # Selecionar todas via checkbox do header
     try:
-        header_checkbox = driver.find_element(By.CSS_SELECTOR, "th mat-checkbox, thead mat-checkbox")
-        header_checkbox.click()
+        header_cb = driver.find_element(By.CSS_SELECTOR, "thead mat-checkbox, th mat-checkbox")
+        header_cb.click()
         time.sleep(1)
         log("  Todas as linhas selecionadas.")
     except Exception as e:
-        log(f"  Erro ao selecionar todas: {e}")
-        # Tentar selecionar individualmente
-        checkboxes = driver.find_elements(By.CSS_SELECTOR, "tbody mat-checkbox, tr.mat-row mat-checkbox")
-        for cb in checkboxes:
-            try:
-                cb.click()
-                time.sleep(0.1)
-            except Exception:
-                pass
-    
-    # Procurar e clicar no botão de deletar/remover
-    time.sleep(1)
-    deleted = False
-    
-    # Tentar encontrar botão de excluir que aparece após seleção
-    delete_selectors = [
-        "//button[contains(text(), 'Excluir')]",
-        "//button[contains(text(), 'Remover')]",
-        "//button[contains(text(), 'Deletar')]",
-        "//button[contains(@mattooltip, 'Excluir')]",
-        "//mat-icon[text()='delete']/..",
-        "//mat-icon[text()='delete_outline']/..",
-    ]
-    
-    for selector in delete_selectors:
+        log(f"  Erro ao selecionar: {e}")
+        return False
+
+    # Clicar em Excluir
+    try:
+        excluir_btn = WebDriverWait(driver, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Excluir')]"))
+        )
+        excluir_btn.click()
+        time.sleep(1)
+        log("  Botão Excluir clicado.")
+    except Exception as e:
+        log(f"  Botão Excluir não encontrado: {e}")
+        return False
+
+    # Confirmar exclusão no modal
+    try:
+        confirm_btn = WebDriverWait(driver, 5).until(
+            EC.element_to_be_clickable((By.XPATH,
+                "//button[contains(text(), 'Excluir') and ancestor::mat-dialog-container]"
+                " | //mat-dialog-container//button[contains(text(), 'Excluir')]"
+                " | //div[contains(@class,'dialog')]//button[contains(text(), 'Excluir')]"
+            ))
+        )
+        confirm_btn.click()
+        time.sleep(2)
+        log("  Exclusão confirmada.")
+    except Exception:
+        # Tentar clicar no segundo botão Excluir visível
         try:
-            btn = driver.find_element(By.XPATH, selector)
-            if btn.is_displayed():
-                btn.click()
-                time.sleep(1)
-                # Confirmar exclusão se houver diálogo
-                try:
-                    confirm = driver.find_element(By.XPATH, 
-                        "//button[contains(text(), 'Confirmar') or contains(text(), 'Sim') or contains(text(), 'OK')]")
-                    confirm.click()
-                    time.sleep(1)
-                except Exception:
-                    pass
-                deleted = True
-                log("  Linhas excluídas com sucesso.")
-                break
-        except Exception:
-            continue
-    
-    if not deleted:
-        # Se não encontrou botão de excluir, limpar linha por linha via teclado
-        log("  Botão de excluir não encontrado. Limpando via edição de células...")
-        # Alternativa: limpar cada célula individualmente
-        # Isso será feito na inserção (sobrescrever os dados)
-        
-        # Desmarcar seleção
-        try:
-            header_checkbox = driver.find_element(By.CSS_SELECTOR, "th mat-checkbox, thead mat-checkbox")
-            header_checkbox.click()
-            time.sleep(0.5)
+            btns = driver.find_elements(By.XPATH, "//button[contains(text(), 'Excluir')]")
+            if len(btns) > 1:
+                btns[-1].click()
+                time.sleep(2)
+                log("  Exclusão confirmada (fallback).")
         except Exception:
             pass
-        
-        return "overwrite"
-    
+
+    # Verificar se limpou
+    time.sleep(2)
+    rows_after = driver.find_elements(By.CSS_SELECTOR, "tbody tr")
+    log(f"  Linhas restantes: {len(rows_after)}")
     return True
 
 
-def inserir_dados(driver, veiculos):
-    """Insere os dados dos veículos na tabela do Omni."""
-    log(f"Inserindo {len(veiculos)} veículos na tabela...")
-    
-    for i, veiculo in enumerate(veiculos):
-        ficha = veiculo.get("ficha_tecnica", {})
-        
-        # Preparar dados para as colunas do Omni
-        dados_linha = {
-            "Marca": veiculo.get("marca", ""),
-            "Modelo": veiculo.get("nome", ""),
-            "Ano": ficha.get("ano_modelo", ficha.get("ano/modelo", "")),
-            "Preco": veiculo.get("preco", ""),
-            "Cor": ficha.get("cor", ""),
-            "KM": ficha.get("km", ""),
-            "Tipo": classificar_tipo(veiculo.get("nome", ""), veiculo.get("marca", ""))
-        }
-        
-        # Clicar em "Adicionar linha"
+def adicionar_linhas(driver, quantidade):
+    """Adiciona N linhas vazias na tabela."""
+    log(f"Adicionando {quantidade} linhas vazias...")
+
+    for i in range(quantidade):
         try:
-            add_btn = WebDriverWait(driver, 10).until(
-                EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Adicionar linha')]"))
-            )
-            add_btn.click()
-            time.sleep(0.8)
+            add_btn = driver.find_element(By.XPATH, "//button[contains(text(), 'Adicionar linha')]")
+            driver.execute_script("arguments[0].click();", add_btn)
+            time.sleep(0.3)
         except Exception as e:
-            log(f"  Erro ao clicar 'Adicionar linha' para veículo {i+1}: {e}")
-            continue
-        
-        # Preencher cada célula da nova linha
-        # A nova linha aparece no final da tabela
+            log(f"  Erro ao adicionar linha {i+1}: {e}")
+            return False
+
+        if (i + 1) % 10 == 0:
+            log(f"  {i+1}/{quantidade} linhas adicionadas...")
+
+    log(f"  {quantidade} linhas adicionadas com sucesso.")
+    return True
+
+
+def preencher_dados_js(driver, dados_rows):
+    """Preenche os dados usando JavaScript com contentEditable (técnica que funcionou)."""
+    log(f"Preenchendo {len(dados_rows)} veículos via JavaScript...")
+
+    # Dividir em lotes de 5 para evitar timeout
+    lote_size = 5
+    total_preenchidos = 0
+
+    for lote_idx in range(0, len(dados_rows), lote_size):
+        lote = dados_rows[lote_idx:lote_idx + lote_size]
+        start_row = lote_idx
+
+        # Gerar JavaScript para este lote
+        js_data = json.dumps(lote, ensure_ascii=False)
+        cols_json = json.dumps(COLUNAS_OMNI)
+
+        js_code = f"""
+        async function preencherLote() {{
+            const data = {js_data};
+            const cols = {cols_json};
+            const startIdx = {start_row};
+            function sleep(ms) {{ return new Promise(r => setTimeout(r, ms)); }}
+            async function fillCell(td, value) {{
+                const cellDiv = td.querySelector('.h-table-editable-cell');
+                if (!cellDiv) return false;
+                cellDiv.click();
+                await sleep(200);
+                const editable = td.querySelector('[contenteditable="true"]');
+                if (editable) {{
+                    editable.focus();
+                    editable.textContent = value;
+                    editable.dispatchEvent(new Event('input', {{ bubbles: true }}));
+                    editable.dispatchEvent(new Event('blur', {{ bubbles: true }}));
+                    return true;
+                }}
+                return false;
+            }}
+            const allRows = document.querySelectorAll('tbody tr');
+            let filled = 0;
+            for (let i = 0; i < data.length; i++) {{
+                const rowIdx = startIdx + i;
+                if (rowIdx >= allRows.length) break;
+                const row = allRows[rowIdx];
+                const tds = row.querySelectorAll('td');
+                for (let j = 0; j < cols.length; j++) {{
+                    await fillCell(tds[j + 1], data[i][cols[j]] || '');
+                    await sleep(50);
+                }}
+                filled++;
+            }}
+            return 'OK: ' + filled;
+        }}
+        return preencherLote();
+        """
+
         try:
-            # Rolar até o final da tabela
-            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-            time.sleep(0.5)
-            
-            # Encontrar a última linha da tabela
-            rows = driver.find_elements(By.CSS_SELECTOR, "tbody tr, tr.mat-row")
-            if not rows:
-                log(f"  Nenhuma linha encontrada após adicionar.")
-                continue
-            
-            ultima_linha = rows[-1]
-            celulas = ultima_linha.find_elements(By.CSS_SELECTOR, "td")
-            
-            # Preencher cada célula (pular a primeira que é o checkbox)
-            col_idx = 0
-            for celula in celulas:
-                # Pular célula de checkbox
-                try:
-                    celula.find_element(By.CSS_SELECTOR, "mat-checkbox")
-                    continue
-                except NoSuchElementException:
-                    pass
-                
-                if col_idx < len(COLUNAS_OMNI):
-                    coluna = COLUNAS_OMNI[col_idx]
-                    valor = dados_linha.get(coluna, "")
-                    
-                    try:
-                        # Clicar na célula para ativar edição
-                        celula.click()
-                        time.sleep(0.3)
-                        
-                        # Encontrar o input dentro da célula
-                        try:
-                            input_el = celula.find_element(By.CSS_SELECTOR, "input, textarea")
-                            input_el.clear()
-                            input_el.send_keys(str(valor))
-                        except NoSuchElementException:
-                            # Tentar editar diretamente o div editável
-                            div_el = celula.find_element(By.CSS_SELECTOR, "div[contenteditable], div")
-                            div_el.click()
-                            time.sleep(0.2)
-                            # Selecionar todo e substituir
-                            div_el.send_keys(Keys.CONTROL + "a")
-                            div_el.send_keys(str(valor))
-                        
-                        time.sleep(0.2)
-                    except Exception as e:
-                        log(f"  Erro ao preencher {coluna} do veículo {i+1}: {e}")
-                    
-                    col_idx += 1
-            
-            if (i + 1) % 5 == 0:
-                log(f"  {i+1}/{len(veiculos)} veículos inseridos...")
-                
+            result = driver.execute_script(js_code)
+            total_preenchidos += len(lote)
+            log(f"  Lote {lote_idx // lote_size + 1}: {result} ({total_preenchidos}/{len(dados_rows)})")
         except Exception as e:
-            log(f"  Erro ao preencher linha do veículo {i+1}: {e}")
-            continue
-    
-    log(f"  Inserção concluída: {len(veiculos)} veículos.")
+            log(f"  Erro no lote {lote_idx // lote_size + 1}: {e}")
+
+        time.sleep(1)
+
+    log(f"  Preenchimento concluído: {total_preenchidos} veículos.")
+    return total_preenchidos
 
 
 def salvar_tabela(driver):
-    """Clica no botão Salvar para persistir as alterações."""
+    """Clica no botão Salvar."""
     log("Salvando tabela...")
     try:
-        # Rolar para o topo
         driver.execute_script("window.scrollTo(0, 0);")
         time.sleep(1)
-        
+
         save_btn = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Salvar')]"))
         )
         save_btn.click()
-        time.sleep(3)
-        
-        # Verificar se salvou (procurar mensagem de sucesso)
-        try:
-            WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, 
-                    "//*[contains(text(), 'sucesso') or contains(text(), 'salvo') or contains(text(), 'Salvo')]"))
-            )
-            log("Tabela salva com sucesso!")
-        except TimeoutException:
-            log("Tabela salva (sem mensagem de confirmação detectada).")
-        
+        time.sleep(5)
+        log("Tabela salva com sucesso!")
         return True
     except Exception as e:
         log(f"Erro ao salvar tabela: {e}")
         return False
 
 
-def classificar_tipo(nome, marca):
+def classificar_tipo(nome):
     """Classifica o tipo do veículo com base no nome/modelo."""
     nome_lower = nome.lower() if nome else ""
-    
-    # SUVs conhecidos
-    suvs = ["hr-v", "hrv", "creta", "renegade", "tracker", "nivus", "t-cross", 
-            "tcross", "kicks", "duster", "compass", "tucson", "ix35", "sportage",
-            "tiggo", "tiguan", "captur", "eclipsse", "eclipse", "rav4", "cx-5",
-            "cx5", "seltos", "stonic", "soul"]
-    
-    # Pickups conhecidas
-    pickups = ["toro", "strada", "saveiro", "montana", "hilux", "s10", "ranger",
-               "amarok", "frontier", "oroch", "maverick"]
-    
-    # Sedans conhecidos
-    sedans = ["corolla", "civic", "cruze", "sentra", "virtus", "cronos", "onix plus",
-              "voyage", "prisma", "cobalt", "city", "yaris sedan", "versa", "hb20s"]
-    
-    # Hatches conhecidos
-    hatches = ["fit", "hb20", "polo", "gol", "onix", "argo", "mobi", "kwid",
-               "sandero", "up!", "ka", "yaris", "etios", "fox"]
-    
-    # Minivans/MPVs
-    minivans = ["spin", "livina", "mobilio", "br-v"]
-    
-    for suv in suvs:
-        if suv in nome_lower:
-            return "SUV"
-    
-    for pickup in pickups:
-        if pickup in nome_lower:
-            return "Pickup"
-    
-    for sedan in sedans:
-        if sedan in nome_lower:
-            return "Sedan"
-    
-    for hatch in hatches:
-        if hatch in nome_lower:
-            return "Hatch"
-    
-    for mini in minivans:
-        if mini in nome_lower:
-            return "Minivan"
-    
-    return "Outro"
+
+    suvs = ['creta', 'tracker', 'hr-v', 'hrv', 't-cross', 'tcross', 'tiggo',
+            'renegade', 'compass', 'kicks', 'duster', 'captur', 'tucson',
+            'sportage', 'rav4', 'cx-5', 'ecosport', 'pulse', 'nivus']
+    sedans = ['corolla', 'civic', 'cruze', 'sentra', 'virtus', 'cronos',
+              'onix plus', 'hb20s', 'yaris sedan', 'city', 'versa',
+              'hb 20 sedan', 'onix sedan']
+    hatches = ['polo', 'gol', 'onix hatch', 'hb20 hatch', 'hb 20 hatch',
+               'hb 20 1.0', 'argo', 'mobi', 'kwid', 'sandero', 'ka',
+               'up!', 'fox', 'fit']
+    pickups = ['hilux', 'ranger', 'amarok', 's10', 'frontier', 'toro',
+               'saveiro', 'strada', 'montana', 'oroch']
+
+    for s in suvs:
+        if s in nome_lower:
+            return 'SUV'
+    for s in sedans:
+        if s in nome_lower:
+            return 'Sedan'
+    for s in hatches:
+        if s in nome_lower:
+            return 'Hatch'
+    for s in pickups:
+        if s in nome_lower:
+            return 'Pickup'
+    return 'Outro'
+
+
+def preparar_dados(estoque):
+    """Converte os dados do JSON do scraper para o formato da tabela Omni."""
+    rows = []
+    for v in estoque:
+        ft = v.get('ficha_tecnica', {})
+        carac = v.get('caracteristicas', [])
+
+        row = {
+            'Marca': v.get('marca', ''),
+            'Modelo': v.get('nome', ''),
+            'Ano': ft.get('ano_modelo', ''),
+            'Preco': v.get('preco', ''),
+            'Cor': ft.get('cor', ''),
+            'KM': ft.get('km', ''),
+            'Tipo': classificar_tipo(v.get('nome', '')),
+            'Cambio': ft.get('cambio', ''),
+            'Combustivel': ft.get('combustivel', ''),
+            'Descricao': (v.get('descricao', '') or '')[:300],
+            'Opcionais': ', '.join(carac[:15]) if carac else '',
+            'Link': v.get('url', '')
+        }
+        rows.append(row)
+
+    return rows
 
 
 def carregar_estoque():
@@ -515,67 +471,73 @@ def carregar_estoque():
         log(f"ERRO: Arquivo de estoque não encontrado: {ESTOQUE_JSON}")
         log("Execute primeiro o scraper: python3 scraper_anisio.py")
         return None
-    
+
     with open(ESTOQUE_JSON, "r", encoding="utf-8") as f:
         estoque = json.load(f)
-    
+
     log(f"Estoque carregado: {len(estoque)} veículos.")
     return estoque
 
 
 def main():
-    log("=" * 50)
+    log("=" * 60)
     log("ATUALIZANDO BASE DE CONHECIMENTO NO OMNI")
-    log("=" * 50)
-    
+    log("=" * 60)
+
     # 1. Carregar estoque
     estoque = carregar_estoque()
     if not estoque:
         return
-    
-    # 2. Criar driver
-    # Usar headless=False na primeira vez para debug, depois True
+
+    # 2. Preparar dados para a tabela
+    dados_rows = preparar_dados(estoque)
+    log(f"Dados preparados: {len(dados_rows)} veículos com {len(COLUNAS_OMNI)} colunas.")
+
+    # 3. Criar driver (headless=False na primeira vez para OTP)
     first_run = not os.path.exists(COOKIES_FILE)
     driver = criar_driver(headless=not first_run)
-    
+
     try:
-        # 3. Tentar carregar cookies salvos
+        # 4. Tentar carregar cookies salvos
         if not first_run:
             carregar_cookies(driver)
-        
-        # 4. Verificar se sessão está ativa
+
+        # 5. Verificar sessão
         sessao_ativa = verificar_sessao(driver)
-        
+
         if not sessao_ativa:
-            # Precisa fazer login
             if not fazer_login(driver):
                 log("ERRO: Não foi possível fazer login.")
                 return
-            
-            # Navegar para a tabela
             driver.get(TABLE_URL)
             time.sleep(5)
-        
-        # 5. Limpar tabela existente
-        resultado_limpeza = limpar_tabela(driver)
-        
-        # 6. Inserir novos dados
-        inserir_dados(driver, estoque)
-        
-        # 7. Salvar
+
+        # 6. Limpar tabela existente
+        limpar_tabela(driver)
+
+        # 7. Recarregar página para garantir estado limpo
+        driver.get(TABLE_URL)
+        time.sleep(5)
+
+        # 8. Adicionar linhas vazias
+        adicionar_linhas(driver, len(dados_rows))
+
+        # 9. Preencher dados via JavaScript (contentEditable)
+        preencher_dados_js(driver, dados_rows)
+
+        # 10. Salvar tabela
         salvar_tabela(driver)
-        
-        # 8. Salvar cookies atualizados
+
+        # 11. Salvar cookies atualizados
         salvar_cookies(driver)
-        
-        log("=" * 50)
+
+        log("=" * 60)
         log("ATUALIZAÇÃO CONCLUÍDA COM SUCESSO!")
-        log(f"  {len(estoque)} veículos atualizados na tabela do Omni.")
-        log("=" * 50)
-        
+        log(f"  {len(dados_rows)} veículos atualizados na tabela do Omni.")
+        log("=" * 60)
+
     except Exception as e:
         log(f"ERRO CRÍTICO: {e}")
-        # Salvar screenshot para debug
         try:
             screenshot_path = os.path.join(OUTPUT_DIR, "erro_screenshot.png")
             driver.save_screenshot(screenshot_path)
