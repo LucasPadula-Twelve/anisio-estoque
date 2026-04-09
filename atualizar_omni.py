@@ -13,11 +13,13 @@ Uso: python3 atualizar_omni.py
 import json
 import os
 import pickle
+import re
 import time
 import sys
 from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -56,7 +58,7 @@ def criar_driver(headless=True):
     """Cria e retorna uma instância do Chrome WebDriver."""
     options = Options()
     if headless:
-        options.add_argument("--headless")
+        options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
@@ -67,7 +69,8 @@ def criar_driver(headless=True):
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
     )
     options.binary_location = "/usr/bin/chromium-browser"
-    driver = webdriver.Chrome(options=options)
+    service = Service(executable_path="/home/ubuntu/.cache/selenium/chromedriver/linux64/128.0.6613.137/chromedriver")
+    driver = webdriver.Chrome(service=service, options=options)
     driver.set_page_load_timeout(60)
     return driver
 
@@ -408,6 +411,22 @@ def salvar_tabela(driver):
         return False
 
 
+def limpar_descricao(descricao):
+    """Remove telefones, nomes de vendedores e informacoes de contato da descricao."""
+    if not descricao:
+        return ''
+    # Remover padroes como: ZAP (19) 99933-2423 FERNANDO
+    descricao = re.sub(r'ZAP\s*\(?\d{2}\)?\s*[\d\-\.]+\s*[A-Z]+', '', descricao, flags=re.IGNORECASE)
+    # Remover telefones soltos: (19) 99933-2423 ou 19 99933-2423
+    descricao = re.sub(r'\(?\d{2}\)?\s*\d{4,5}[\-\.]?\d{4}', '', descricao)
+    # Remover "ZAP" ou "WHATSAPP" solto
+    descricao = re.sub(r'\b(ZAP|WHATSAPP|WHATS|FONE|TELEFONE|LIGUE)\b', '', descricao, flags=re.IGNORECASE)
+    # Limpar espacos extras e pontuacao solta
+    descricao = re.sub(r'\s{2,}', ' ', descricao).strip()
+    descricao = re.sub(r'\s*\.\s*$', '.', descricao)
+    return descricao
+
+
 def classificar_tipo(nome):
     """Classifica o tipo do veículo com base no nome/modelo."""
     nome_lower = nome.lower() if nome else ""
@@ -456,8 +475,8 @@ def preparar_dados(estoque):
             'Tipo': classificar_tipo(v.get('nome', '')),
             'Cambio': ft.get('cambio', ''),
             'Combustivel': ft.get('combustivel', ''),
-            'Descricao': (v.get('descricao', '') or '')[:300],
-            'Opcionais': ', '.join(carac[:15]) if carac else '',
+            'Descricao': limpar_descricao(v.get('descricao', '') or ''),
+            'Opcionais': ', '.join(carac) if carac else '',
             'Link': v.get('url', '')
         }
         rows.append(row)
