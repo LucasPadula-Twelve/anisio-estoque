@@ -1,6 +1,6 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 17/04/2026 às 06:08
+Atualizado em: 22/04/2026 às 10:43
 Total de veículos disponíveis: 17
 ============================================================
 
@@ -238,6 +238,6 @@ Combustível: Flex
 Cor: Prata
 Portas: 4
 Quilometragem: 72.000
-Link: https://www.anisioautomoveis.com.br/veiculo/555072-fox-1-6-4p-xtreme-flex/
+Link: https://www.anisioautomoveis.com.br/veiculo/555992-fox-1-6-4p-xtreme-flex/
 Descrição: MARAVILHOSO, todo original, sem retoques na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro sempre da cidade, manual, chave cópia, interior impecável, MIDIA e rodas aro 15 originais, pneus novos, estepe sem uso. (Carro EXTREMAMENTE NOVO, SEM DETALHES , E DA CIDADE).
 Opcionais: 2 AIR BAGS, ALARME, AR CONDICIONADO, BANCO MOTORISTA COM REGULAGEM DE ALTURA, CÂMBIO MANUAL, CD PLAYER ORIGINAL, DESEMBAÇADOR TRASEIRO, DIREÇÃO HIDRÁULICA, ESTEPE SEM USO, FAROL DE MILHA, FREIOS ABS, INSUL FILM, LIMPADOR TRASEIRO, MULTIMÍDIA, TRAVA ELÉTRICAS, VIDROS ELÉTRICOS, VIDROS VERDES

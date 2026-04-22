@@ -360,5 +360,51 @@
     ],
     "status": "VENDIDO",
     "data_saida": "2026-04-17"
+  },
+  {
+    "url": "https://www.anisioautomoveis.com.br/veiculo/555072-fox-1-6-4p-xtreme-flex/",
+    "id": "555072",
+    "data_coleta": "2026-04-17 06:08:12",
+    "nome": "FOX 1.6 4P XTREME FLEX",
+    "preco": "R$ 64.990,00",
+    "titulo_pagina": "Volkswagen Fox 1.6 4P XTREME FLEX 2017/18 Flex Prata 4P 72.000 km em Piracicaba - Anísio Automóveis",
+    "ficha_tecnica": {
+      "ano_modelo": "2017/18",
+      "combustivel": "Flex",
+      "cor": "Prata",
+      "km": "72.000",
+      "portas": "4",
+      "cambio": "Manual"
+    },
+    "marca": "Volkswagen",
+    "descricao": "MARAVILHOSO, todo original, sem retoques na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro sempre da cidade, manual, chave cópia, interior impecável, MIDIA e rodas aro 15 originais, pneus novos, estepe sem uso. (Carro EXTREMAMENTE NOVO, SEM DETALHES , E DA CIDADE).",
+    "caracteristicas": [
+      "2 AIR BAGS",
+      "ALARME",
+      "AR CONDICIONADO",
+      "BANCO MOTORISTA COM REGULAGEM DE ALTURA",
+      "CÂMBIO MANUAL",
+      "CD PLAYER ORIGINAL",
+      "DESEMBAÇADOR TRASEIRO",
+      "DIREÇÃO HIDRÁULICA",
+      "ESTEPE SEM USO",
+      "FAROL DE MILHA",
+      "FREIOS ABS",
+      "INSUL FILM",
+      "LIMPADOR TRASEIRO",
+      "MULTIMÍDIA",
+      "TRAVA ELÉTRICAS",
+      "VIDROS ELÉTRICOS",
+      "VIDROS VERDES"
+    ],
+    "fotos": [
+      "https://i0.wp.com/www.anisioautomoveis.com.br/wp-content/uploads/2026/04/134883.0ba31e71916750a.jpg",
+      "https://i0.wp.com/www.anisioautomoveis.com.br/wp-content/uploads/2026/04/134883.a630bbed627ef4b.jpg",
+      "https://i0.wp.com/www.anisioautomoveis.com.br/wp-content/uploads/2026/04/134883.cf959db4ba054ff.jpg",
+      "https://i0.wp.com/www.anisioautomoveis.com.br/wp-content/uploads/2026/04/134883.6084fe2a7085ad4.jpg",
+      "https://i0.wp.com/www.anisioautomoveis.com.br/wp-content/uploads/2026/04/134883.a3bcec06e51d588.jpg"
+    ],
+    "status": "VENDIDO",
+    "data_saida": "2026-04-22"
   }
 ]
