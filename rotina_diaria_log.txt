@@ -1,0 +1,14 @@
+[2026-05-04 07:03:48] ============================================================
+[2026-05-04 07:03:48] ROTINA DIÁRIA DE ATUALIZAÇÃO DO ESTOQUE
+[2026-05-04 07:03:48] ============================================================
+[2026-05-04 07:03:48] Executando scraper...
+[2026-05-04 07:05:14] Scraper concluído: 21 veículos coletados
+[2026-05-04 07:05:14] ==================================================
+[2026-05-04 07:05:14] RESUMO DA ROTINA DIÁRIA
+[2026-05-04 07:05:14]   Data: 04/05/2026 07:05
+[2026-05-04 07:05:14]   Veículos no estoque: 21
+[2026-05-04 07:05:14]   Arquivo JSON: /home/ubuntu/anisio-estoque/estoque_atual.json
+[2026-05-04 07:05:14]   Arquivo CSV: /home/ubuntu/anisio-estoque/estoque_atual.csv
+[2026-05-04 07:05:14] ==================================================
+[2026-05-04 07:05:14] Rotina concluída com sucesso! 21 veículos atualizados.
+[2026-05-04 07:05:14] A tabela do Omni será atualizada pelo Manus via navegador.
