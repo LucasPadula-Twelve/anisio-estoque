@@ -465,3 +465,31 @@ Stacktrace:
 [2026-05-14 09:07:20]   URL pública: https://raw.githubusercontent.com/LucasPadula-Twelve/anisio-estoque/main/base_conhecimento_omni.txt
 [2026-05-14 09:07:20] --------------------------------------------------
 [2026-05-14 09:07:20] Driver encerrado. Scraper finalizado.
+[2026-05-15 09:04:33] ==================================================
+[2026-05-15 09:04:33] INICIANDO SCRAPER ANÍSIO AUTOMÓVEIS
+[2026-05-15 09:04:33] ==================================================
+[2026-05-15 09:04:34] Acessando página de estoque...
+[2026-05-15 09:04:54]   Clicou 'Mais veículos'... (6 URLs coletadas até agora)
+[2026-05-15 09:04:57]   Clicou 'Mais veículos'... (12 URLs coletadas até agora)
+[2026-05-15 09:05:00]   Clicou 'Mais veículos'... (12 URLs coletadas até agora)
+[2026-05-15 09:05:03]   Clicou 'Mais veículos'... (12 URLs coletadas até agora)
+[2026-05-15 09:05:07]   Clicou 'Mais veículos'... (12 URLs coletadas até agora)
+[2026-05-15 09:05:10] Total de 12 veículos encontrados no estoque.
+[2026-05-15 09:05:10]   Extraindo veículo 1/12: 555060-toro-1-3-16v-4p-flex-270-turbo-freedom-automatico
+[2026-05-15 09:05:15]   Extraindo veículo 2/12: 556165-corolla-cross-1-8-16v-4p-flex-vvt-i-hybrid-xrx-automatico-cvt
+[2026-05-15 09:05:19]   Extraindo veículo 3/12: 556178-q3-1-4-4p-35-tfsi-prestige-plus-s-tronic-automatico
+[2026-05-15 09:05:24]   Extraindo veículo 4/12: 556374-fiorino-furgao-1-4-flex-endurance
+[2026-05-15 09:05:28]   Extraindo veículo 5/12: 557156-jetta-1-4-16v-4p-tsi-comfortline-automatico
+[2026-05-15 09:05:33]   Extraindo veículo 6/12: 557780-toro-1-3-16v-4p-flex-270-turbo-freedom-automatico-2
+[2026-05-15 09:05:38]   Extraindo veículo 7/12: 558688-creta-1-6-16v-4p-flex-action-automatico
+[2026-05-15 09:05:45]   Extraindo veículo 8/12: 560548-kicks-1-6-16v-4p-flexstart-sense-xtronic-automatico-cvt
+[2026-05-15 09:05:49]   Extraindo veículo 9/12: 560560-renegade-1-3-16v-4p-flex-t270-longitude-turbo-automatico
+[2026-05-15 09:05:53]   Extraindo veículo 10/12: 560740-onix-sedan-1-0-12v-4p-flex-lt-plus
+[2026-05-15 09:05:58]   Extraindo veículo 11/12: 560753-saveiro-1-6-16v-flex-msi-robust-cabine-simples
+[2026-05-15 09:06:04]   Extraindo veículo 12/12: 560762-polo-hatch-1-0-12v-4p-mpi-track-1st-edition
+[2026-05-15 09:06:12]   3 veículo(s) NOVO(S) no estoque.
+[2026-05-15 09:06:12]   4 veículo(s) marcado(s) como VENDIDO(S).
+[2026-05-15 09:06:12] Estoque salvo: /home/ubuntu/anisio-estoque/estoque_atual.json
+[2026-05-15 09:06:12] Base de conhecimento gerada: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt
+[2026-05-15 09:06:12] CSV gerado: /home/ubuntu/anisio-estoque/estoque_atual.csv
+[2026-05-15 09:06:12] Publicando no GitHub...
