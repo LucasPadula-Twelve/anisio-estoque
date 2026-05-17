@@ -561,3 +561,72 @@ Stacktrace:
 [2026-05-16 09:07:45]   URL pública: https://raw.githubusercontent.com/LucasPadula-Twelve/anisio-estoque/main/base_conhecimento_omni.txt
 [2026-05-16 09:07:45] --------------------------------------------------
 [2026-05-16 09:07:45] Driver encerrado. Scraper finalizado.
+[2026-05-17 09:04:15] ==================================================
+[2026-05-17 09:04:15] INICIANDO SCRAPER ANÍSIO AUTOMÓVEIS
+[2026-05-17 09:04:15] ==================================================
+[2026-05-17 09:04:15] Acessando página de estoque...
+[2026-05-17 09:04:27]   Clicou 'Mais veículos'... (6 URLs coletadas até agora)
+[2026-05-17 09:04:30]   Clicou 'Mais veículos'... (12 URLs coletadas até agora)
+[2026-05-17 09:04:34]   Clicou 'Mais veículos'... (18 URLs coletadas até agora)
+[2026-05-17 09:04:37] Total de 20 veículos encontrados no estoque.
+[2026-05-17 09:04:37]   Extraindo veículo 1/20: 534554-tiggo-5x-1-5-4p-txs-flex-turbo-automatico-dct
+[2026-05-17 09:04:42]   Extraindo veículo 2/20: 540441-montana-1-2-12v-flex-lt-turbo
+[2026-05-17 09:04:46]   Extraindo veículo 3/20: 541270-virtus-1-0-4p-170-tsi-automatico
+[2026-05-17 09:04:50]   Extraindo veículo 4/20: 541282-virtus-1-0-4p-170-tsi
+[2026-05-17 09:04:55]   Extraindo veículo 5/20: 541306-compass-2-0-16v-4p-flex-sport-automatico
+[2026-05-17 09:04:59]   Extraindo veículo 6/20: 549500-fit-1-5-16v-4p-lx-flex
+[2026-05-17 09:05:03]   Extraindo veículo 7/20: 552514-renegade-2-0-16v-4p-turbo-diesel-limited-4x4-automatico
+[2026-05-17 09:05:07]   Extraindo veículo 8/20: 555060-toro-1-3-16v-4p-flex-270-turbo-freedom-automatico
+[2026-05-17 09:05:12]   Extraindo veículo 9/20: 556165-corolla-cross-1-8-16v-4p-flex-vvt-i-hybrid-xrx-automatico-cvt
+[2026-05-17 09:05:16]   Extraindo veículo 10/20: 556178-q3-1-4-4p-35-tfsi-prestige-plus-s-tronic-automatico
+[2026-05-17 09:05:20]   Extraindo veículo 11/20: 556374-fiorino-furgao-1-4-flex-endurance
+[2026-05-17 09:05:24]   Extraindo veículo 12/20: 557156-jetta-1-4-16v-4p-tsi-comfortline-automatico
+[2026-05-17 09:05:29]   Extraindo veículo 13/20: 557780-toro-1-3-16v-4p-flex-270-turbo-freedom-automatico-2
+[2026-05-17 09:05:33]   Extraindo veículo 14/20: 558688-creta-1-6-16v-4p-flex-action-automatico
+[2026-05-17 09:05:37]   Extraindo veículo 15/20: 560548-kicks-1-6-16v-4p-flexstart-sense-xtronic-automatico-cvt
+[2026-05-17 09:05:41]   Extraindo veículo 16/20: 560560-renegade-1-3-16v-4p-flex-t270-longitude-turbo-automatico
+[2026-05-17 09:05:45]   Extraindo veículo 17/20: 560740-onix-sedan-1-0-12v-4p-flex-lt-plus
+[2026-05-17 09:05:49]   Extraindo veículo 18/20: 560753-saveiro-1-6-16v-flex-msi-robust-cabine-simples
+[2026-05-17 09:05:54]   Extraindo veículo 19/20: 560762-polo-hatch-1-0-12v-4p-mpi-track-1st-edition
+[2026-05-17 09:05:58]   Extraindo veículo 20/20: 561176-t-cross-1-0-4p-200-tsi-flex-automatico
+[2026-05-17 09:06:02]   1 veículo(s) NOVO(S) no estoque.
+[2026-05-17 09:06:02] Estoque salvo: /home/ubuntu/anisio-estoque/estoque_atual.json
+[2026-05-17 09:06:02] Base de conhecimento gerada: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt
+[2026-05-17 09:06:02] CSV gerado: /home/ubuntu/anisio-estoque/estoque_atual.csv
+[2026-05-17 09:06:02] Publicando no GitHub...
+[2026-05-17 09:06:05]   Push realizado com sucesso!
+[2026-05-17 09:06:05]   URL pública da base: https://raw.githubusercontent.com/LucasPadula-Twelve/anisio-estoque/main/base_conhecimento_omni.txt
+[2026-05-17 09:06:05] Iniciando atualização da tabela no Omni...
+[2026-05-17 09:06:05] Erro ao atualizar Omni (não crítico): Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/chromium-browser is no longer running, so ChromeDriver is assuming that Chrome has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x55a48b8442da <unknown>
+#1 0x55a48b512200 <unknown>
+#2 0x55a48b54a1e5 <unknown>
+#3 0x55a48b546058 <unknown>
+#4 0x55a48b592a7e <unknown>
+#5 0x55a48b592296 <unknown>
+#6 0x55a48b586673 <unknown>
+#7 0x55a48b554473 <unknown>
+#8 0x55a48b55547e <unknown>
+#9 0x55a48b80b0db <unknown>
+#10 0x55a48b80f071 <unknown>
+#11 0x55a48b7f79d5 <unknown>
+#12 0x55a48b80fbf2 <unknown>
+#13 0x55a48b7dcb6f <unknown>
+#14 0x55a48b833248 <unknown>
+#15 0x55a48b833417 <unknown>
+#16 0x55a48b8430cc <unknown>
+#17 0x7fe41be94ac3 <unknown>
+
+[2026-05-17 09:06:05] A base de conhecimento no GitHub foi atualizada normalmente.
+[2026-05-17 09:06:05] --------------------------------------------------
+[2026-05-17 09:06:05] RESUMO DA EXECUÇÃO:
+[2026-05-17 09:06:05]   Veículos no estoque: 20
+[2026-05-17 09:06:05]   Veículos novos: 1
+[2026-05-17 09:06:05]   Veículos vendidos (saíram): 0
+[2026-05-17 09:06:05]   Total no histórico de vendidos: 25
+[2026-05-17 09:06:05]   URL pública: https://raw.githubusercontent.com/LucasPadula-Twelve/anisio-estoque/main/base_conhecimento_omni.txt
+[2026-05-17 09:06:05] --------------------------------------------------
+[2026-05-17 09:06:05] Driver encerrado. Scraper finalizado.
