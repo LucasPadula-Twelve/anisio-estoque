@@ -1,7 +1,7 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 16/05/2026 às 09:07
-Total de veículos disponíveis: 19
+Atualizado em: 17/05/2026 às 09:06
+Total de veículos disponíveis: 20
 ============================================================
 
 --- VEÍCULO 1 ---
@@ -269,3 +269,17 @@ Quilometragem: 44.000
 Link: https://www.anisioautomoveis.com.br/veiculo/560762-polo-hatch-1-0-12v-4p-mpi-track-1st-edition/
 Descrição: MARAVILHOSO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA original, 4 pneus ZERO, estepe sem uso. (Carro MUITO NOVO MESMO, TODO ORIGINAL).
 Opcionais: 2 AIR BAGS, ALARME, AR CONDICIONADO, ÁUDIO - SISTEMA DE SOM, BANCO MOTORISTA COM REGULAGEM DE ALTURA, CÂMBIO MANUAL, CD PLAYER ORIGINAL, CONTROLE DE SOM NO VOLANTE, DESEMBAÇADOR TRASEIRO, DIREÇÃO HIDRÁULICA, ESTEPE SEM USO, FAROL DE MILHA, FREIOS ABS, GPS, INSUL FILM, LIMPADOR TRASEIRO, MULTIMÍDIA, SENSOR DE ESTACIONAMENTO, TRAVA ELÉTRICAS, VIDROS ELÉTRICOS, VIDROS VERDES, VOLANTE COM REGULAGEM DE ALTURA
+
+--- VEÍCULO 20 ---
+Nome: T-CROSS 1.0 4P 200 TSI FLEX AUTOMÁTICO
+Marca: Volkswagen
+Preço: R$ 117.990,00
+Ano/Modelo: 2024/25
+Câmbio: Automático
+Combustível: Flex
+Cor: Prata
+Portas: 4
+Quilometragem: 45.000
+Link: https://www.anisioautomoveis.com.br/veiculo/561176-t-cross-1-0-4p-200-tsi-flex-automatico/
+Descrição: NOVÍSSIMO, todo original, sem retoques na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA e rodas aro 17 originais, pneus novos. (Carro MUITO NOVO MESMO, NUNCA BATEU).
+Opcionais: 2 AIR BAGS, ALARME ORIGINAL, ÁUDIO - SISTEMA DE SOM, BANCO MOTORISTA COM REGULAGEM DE ALTURA, CD PLAYER ORIGINAL, CONTROLE DE SOM NO VOLANTE, DIREÇÃO HIDRÁULICA, ESTEPE SEM USO, FREIOS ABS, GPS, INSUL FILM, LIMPADOR TRASEIRO, MULTIMÍDIA, RETROVISOR FOTOCROMÁTICO, RODAS DE LIGA LEVES, SENSOR DE ESTACIONAMENTO, TRAVA ELÉTRICAS, VIDROS ELÉTRICOS, VIDROS VERDES, VOLANTE COM REGULAGEM DE ALTURA
