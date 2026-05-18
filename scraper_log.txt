@@ -630,3 +630,44 @@ Stacktrace:
 [2026-05-17 09:06:05]   URL pública: https://raw.githubusercontent.com/LucasPadula-Twelve/anisio-estoque/main/base_conhecimento_omni.txt
 [2026-05-17 09:06:05] --------------------------------------------------
 [2026-05-17 09:06:05] Driver encerrado. Scraper finalizado.
+[2026-05-18 09:04:40] ==================================================
+[2026-05-18 09:04:40] INICIANDO SCRAPER ANÍSIO AUTOMÓVEIS
+[2026-05-18 09:04:40] ==================================================
+[2026-05-18 09:04:41] Acessando página de estoque...
+[2026-05-18 09:04:45] Total de 0 veículos encontrados no estoque.
+[2026-05-18 09:04:45]   13 veículo(s) marcado(s) como VENDIDO(S).
+[2026-05-18 09:04:45] Estoque salvo: /home/ubuntu/anisio-estoque/estoque_atual.json
+[2026-05-18 09:04:45] Base de conhecimento gerada: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt
+[2026-05-18 09:04:45] Publicando no GitHub...
+[2026-05-18 09:04:47]   Push realizado com sucesso!
+[2026-05-18 09:04:47]   URL pública da base: https://raw.githubusercontent.com/LucasPadula-Twelve/anisio-estoque/main/base_conhecimento_omni.txt
+[2026-05-18 09:04:47] Iniciando atualização da tabela no Omni...
+[2026-05-18 09:04:47] --------------------------------------------------
+[2026-05-18 09:04:47] RESUMO DA EXECUÇÃO:
+[2026-05-18 09:04:47]   Veículos no estoque: 0
+[2026-05-18 09:04:47]   Veículos novos: 0
+[2026-05-18 09:04:47]   Veículos vendidos (saíram): 20
+[2026-05-18 09:04:47]   Total no histórico de vendidos: 38
+[2026-05-18 09:04:47]   URL pública: https://raw.githubusercontent.com/LucasPadula-Twelve/anisio-estoque/main/base_conhecimento_omni.txt
+[2026-05-18 09:04:47] --------------------------------------------------
+[2026-05-18 09:04:47] Driver encerrado. Scraper finalizado.
+[2026-05-18 09:06:04] ==================================================
+[2026-05-18 09:06:04] INICIANDO SCRAPER ANÍSIO AUTOMÓVEIS
+[2026-05-18 09:06:04] ==================================================
+[2026-05-18 09:06:04] Acessando página de estoque...
+[2026-05-18 09:06:09] Total de 0 veículos encontrados no estoque.
+[2026-05-18 09:06:09] Estoque salvo: /home/ubuntu/anisio-estoque/estoque_atual.json
+[2026-05-18 09:06:09] Base de conhecimento gerada: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt
+[2026-05-18 09:06:09] Publicando no GitHub...
+[2026-05-18 09:06:10]   Push realizado com sucesso!
+[2026-05-18 09:06:10]   URL pública da base: https://raw.githubusercontent.com/LucasPadula-Twelve/anisio-estoque/main/base_conhecimento_omni.txt
+[2026-05-18 09:06:10] Iniciando atualização da tabela no Omni...
+[2026-05-18 09:06:10] --------------------------------------------------
+[2026-05-18 09:06:10] RESUMO DA EXECUÇÃO:
+[2026-05-18 09:06:10]   Veículos no estoque: 0
+[2026-05-18 09:06:10]   Veículos novos: 0
+[2026-05-18 09:06:10]   Veículos vendidos (saíram): 20
+[2026-05-18 09:06:10]   Total no histórico de vendidos: 38
+[2026-05-18 09:06:10]   URL pública: https://raw.githubusercontent.com/LucasPadula-Twelve/anisio-estoque/main/base_conhecimento_omni.txt
+[2026-05-18 09:06:10] --------------------------------------------------
+[2026-05-18 09:06:10] Driver encerrado. Scraper finalizado.
