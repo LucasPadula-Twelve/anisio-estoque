@@ -1,272 +1,321 @@
-ESTOQUE DE VEÍCULOS - ANÍSIO AUTOMÓVEIS
-Atualizado em: 18/05/2026 09:38
-Total: 20 veículos disponíveis
+============================================================
+BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
+Atualizado em: 18/05/2026 às 16:04
+Total de veículos disponíveis: 21
+Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
+Horário: Seg-Sex 8h-18h | Sáb 8h-12h
 ============================================================
 
 --- VEÍCULO 1 ---
-Marca: Volkswagen
-Modelo: T-CROSS 1.0 4P 200 TSI FLEX AUTOMÁTICO
-Ano: 2024/25
-Preço: R$ 117.990,00
-Cor: Prata
-KM: 45000
+Nome: Chery Tiggo 5X
+Marca: Chery
+Versão: 1.5 4P TXS FLEX TURBO AUTOMÁTICO DCT
+Preço: R$ 79.990,00
+Ano/Modelo: 2019/2020
+Câmbio: Automático
 Combustível: Flex
-Câmbio: N/A
+Cor: Cinza
 Portas: 4
-Descrição: NOVÍSSIMO, todo original, sem retoques na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA e rodas aro 17 originais, pneus novos. (Carro MUITO NO
-Link: https://www.anisioautomoveis.com.br/veiculo/561176-t-cross-1-0-4p-200-tsi-flex-automatico/
+Quilometragem: 102000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/127866.2a8f6064f562805.jpg
+Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual com todas revisões na concessionária SEM PULAR NENHUMA, chave cópia, interior impecável, MIDIA e rodas 17 originais, 4 pneus ZERO, estepe sem uso.(Carro MUITO CONSERVADO MESMO, SEM 
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos, Revisado Concessionária
 
 --- VEÍCULO 2 ---
-Marca: Volkswagen
-Modelo: POLO HATCH 1.0 12V 4P MPI TRACK 1ST EDITION
-Ano: 2024/25
-Preço: R$ 71.990,00
-Cor: Branco
-KM: 44000
+Nome: Chevrolet Montana
+Marca: Chevrolet
+Versão: 1.2 12V FLEX LT TURBO
+Preço: R$ 104.990,00
+Ano/Modelo: 2023/2024
+Câmbio: Manual
 Combustível: Flex
-Câmbio: N/A
+Cor: Preto
 Portas: 4
-Descrição: MARAVILHOSO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA original, 4 pneus ZERO, estepe sem uso.
-Link: https://www.anisioautomoveis.com.br/veiculo/560762-polo-hatch-1-0-12v-4p-mpi-track-1st-edition/
+Quilometragem: 49000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/130687.ae464b26db128d8.jpg
+Descrição: (1PVA 2026 PAGO TOTAL), Impecável, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, MIDIA original, pneus novos, estepe sem uso. (Carro MUITO NOVO MESMO, SEM DETALHES). FERNANDO 9 CLAUDIO
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Lona Marítima, Multimídia, Retrovisores Elétricos, Sensor de Estacionamento, Trava Elétricas
 
 --- VEÍCULO 3 ---
+Nome: Volkswagen Virtus
 Marca: Volkswagen
-Modelo: SAVEIRO 1.6 16V FLEX MSI ROBUST CABINE SIMPLES
-Ano: 2024/24
-Preço: R$ 72.990,00
-Cor: Prata
-KM: 36000
+Versão: 1.0 4P 170 TSI AUTOMÁTICO
+Preço: R$ 104.990,00
+Ano/Modelo: 2024/2025
+Câmbio: Automático
 Combustível: Flex
-Câmbio: N/A
+Cor: Preto
 Portas: 4
-Descrição: IMPECÁVEL, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, pneus novos estepe sem uso, (Carro MUITO NOVO, só 36.000 Km RODADOS)
-Link: https://www.anisioautomoveis.com.br/veiculo/560753-saveiro-1-6-16v-flex-msi-robust-cabine-simples/
+Quilometragem: 48000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/130978.4356d9f6e2f2818.jpg
+Descrição: (IPVA 2026 PAGO TOTAL), NOVÍSSIMO, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA e rodas originais, pneus, estepe sem uso. (Carro MUITO NOVO MESMO, SEM DETALHES, TODO ORIGINAL). FERNANDO CLAUDIO
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento
 
 --- VEÍCULO 4 ---
-Marca: Chevrolet
-Modelo: ONIX SEDAN 1.0 12V 4P FLEX LT PLUS
-Ano: 2024/25
-Preço: R$ 71.990,00
-Cor: Preto
-KM: 55000
+Nome: Volkswagen Virtus
+Marca: Volkswagen
+Versão: 1.0 4P 170 TSI
+Preço: R$ 94.990,00
+Ano/Modelo: 2024/2024
+Câmbio: Manual
 Combustível: Flex
-Câmbio: N/A
+Cor: Branco
 Portas: 4
-Descrição: IMPECÁVEL, todo original, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual com revisão na concessionária e GARANTIA de FABRICA p/ 10 anos na correia de óleo, chave cópia, interior perfeito, MIDI
-Link: https://www.anisioautomoveis.com.br/veiculo/560740-onix-sedan-1-0-12v-4p-flex-lt-plus/
+Quilometragem: 9000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/130979.8e5b40f1890a7e6.jpg
+Descrição: (IPVA 2026 PAGO TOTAL), MARAVILHOSO, SÓ 9.000 Km, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA e rodas originais, pneus novos, estepe sem uso. (Carro MUITO ZERO MESMO, SÓ 9,000 Km RODADOS, IMPECÁVE
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento, Trava Elétricas
 
 --- VEÍCULO 5 ---
+Nome: Jeep Compass
 Marca: Jeep
-Modelo: RENEGADE 1.3 16V 4P FLEX T270 LONGITUDE TURBO AUTOMÁTICO
-Ano: 2025/25
-Preço: R$ 114.990,00
-Cor: Preto
-KM: 28000
+Versão: 2.0 16V 4P FLEX SPORT AUTOMÁTICO
+Preço: R$ 91.990,00
+Ano/Modelo: 2019/2020
+Câmbio: Automático
 Combustível: Flex
-Câmbio: N/A
+Cor: Cinza
 Portas: 4
-Descrição: MARAVILHOSO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior em couro impecável, MIDIA e rodas aro 18 originais, pneu
-Link: https://www.anisioautomoveis.com.br/veiculo/560560-renegade-1-3-16v-4p-flex-t270-longitude-turbo-automatico/
+Quilometragem: 87000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/130981.52cd7a23ce9913a.jpg
+Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, manual com todas revisões na concessionária, chave cópia, interior perfeito, MIDIA e rodas originais, pneus novos, estepe sem uso. (Carro MUITO CONSERVADO MESM0, SEM DETALHES, TODO ORIGINAL).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos, Revisado Concessionária
 
 --- VEÍCULO 6 ---
-Marca: Nissan
-Modelo: KICKS 1.6 16V 4P FLEXSTART SENSE XTRONIC AUTOMÁTICO CVT
-Ano: 2024/24
-Preço: R$ 101.990,00
-Cor: Preto
-KM: 31000
+Nome: Honda Fit
+Marca: Honda
+Versão: 1.5 16V 4P LX FLEX
+Preço: R$ 61.990,00
+Ano/Modelo: 2015/2015
+Câmbio: Manual
 Combustível: Flex
-Câmbio: N/A
+Cor: Cinza
 Portas: 4
-Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, MIDIA e rodas originais, pneus novos, estepe sem uso. (Carro 
-Link: https://www.anisioautomoveis.com.br/veiculo/560548-kicks-1-6-16v-4p-flexstart-sense-xtronic-automatico-cvt/
+Quilometragem: 136000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/132929.6ad68db215c2446.jpg
+Descrição: IMPECÁVEL, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, SOM e rodas originais, 4 pneus novos, estepe sem uso. (Carro MUITO CONSERVADO MESMO, SEM DETALHES). FERNENDO CLAUDIO
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Direção Hidráulica, Freios ABS, Insul Film, Limpador Traseiro, Retrovisores Elétricos, Rodas de Liga Leves, Trava Elétricas, Vidros Elétricos, Vidros Verdes
 
 --- VEÍCULO 7 ---
-Marca: Hyundai
-Modelo: CRETA 1.6 16V 4P FLEX ACTION AUTOMÁTICO
-Ano: 2024/24
-Preço: R$ 104.990,00
-Cor: Preto
-KM: 52000
-Combustível: Flex
-Câmbio: N/A
+Nome: Jeep Renegade
+Marca: Jeep
+Versão: 2.0 16V 4P TURBO DIESEL LIMITED 4X4 AUTOMÁTICO
+Preço: R$ 89.990,00
+Ano/Modelo: 2018/2018
+Câmbio: Automático
+Combustível: Diesel
+Cor: Branco
 Portas: 4
-Descrição: MARAVILHOSA, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, SOM e rodas originais, pneus novos, estepe sem uso. (Carro
-Link: https://www.anisioautomoveis.com.br/veiculo/558688-creta-1-6-16v-4p-flex-action-automatico/
+Quilometragem: 103000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/133330.f852f0f5460b57c.jpg
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisores Elétricos, Sensor de Estacionamento, Tração 4x4
 
 --- VEÍCULO 8 ---
+Nome: Fiat Toro
 Marca: Fiat
-Modelo: TORO 1.3 16V 4P FLEX 270 TURBO FREEDOM AUTOMÁTICO
-Ano: 2022/23
-Preço: R$ 114.990,00
-Cor: Cinza
-KM: 64000
+Versão: 1.3 16V 4P FLEX 270 TURBO FREEDOM AUTOMÁTICO
+Preço: R$ 124.990,00
+Ano/Modelo: 2024/2024
+Câmbio: Automático
 Combustível: Flex
-Câmbio: N/A
+Cor: Branco
 Portas: 4
-Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, MIDIA e rodas originais, pneus novos, estepe sem uso. (Carro 
-Link: https://www.anisioautomoveis.com.br/veiculo/557780-toro-1-3-16v-4p-flex-270-turbo-freedom-automatico-2/
+Quilometragem: 54000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/134881.784f5c4c74e63d5.jpg
+Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, MIDIA e rodas originais, pneus novos. (Carro MUITO CONSERVADO, TODO ORIGINAL).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Lona Marítima, Multimídia, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento, Trava Elétricas
 
 --- VEÍCULO 9 ---
-Marca: Volkswagen
-Modelo: JETTA 1.4 16V 4P TSI COMFORTLINE AUTOMÁTICO
-Ano: 2018/19
-Preço: R$ 106.990,00
-Cor: Branco
-KM: 125000
-Combustível: Flex
-Câmbio: N/A
+Nome: Toyota Corolla Cross
+Marca: Toyota
+Versão: 1.8 16V 4P FLEX VVT-I HYBRID XRX AUTOMÁTICO CVT
+Preço: R$ 144.990,00
+Ano/Modelo: 2021/2022
+Câmbio: Automático
+Combustível: Híbrido e Flex
+Cor: Prata
 Portas: 4
-Descrição: MARAVILHOSO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, manual com todas revisões na concessionária (SEM PULAR NENHUMA), chave cópia, TETO SOLAR e MIDIA origin
-Link: https://www.anisioautomoveis.com.br/veiculo/557156-jetta-1-4-16v-4p-tsi-comfortline-automatico/
+Quilometragem: 89000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/135190.28631fecfa85396.jpg
+Descrição: NIVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade com todas revisões feitas em Piracicaba (Sem pular nenhuma) e com GARANTIA de FABRICA até janeiro 2032 (10 anos), chave cópia, interior em couro perfeito, TETO SOLAR , MIDIA e rodas aro 18 
+Opcionais: 4 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Garantia de Fábrica, GPS, Limpador Traseiro, Multimídia, Retrovisor Fotocromático
 
 --- VEÍCULO 10 ---
-Marca: Fiat
-Modelo: FIORINO FURGÃO 1.4 FLEX ENDURANCE
-Ano: 2022/23
-Preço: R$ 81.990,00
-Cor: Branco
-KM: 67000
+Nome: Audi Q3
+Marca: Audi
+Versão: 1.4 4P 35 TFSI PRESTIGE PLUS S-TRONIC AUTOMÁTICO
+Preço: R$ 119.990,00
+Ano/Modelo: 2018/2019
+Câmbio: Automático
 Combustível: Flex
-Câmbio: N/A
-Portas: 2
-Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, pneus novos, interior do furgão em ótimo estado. (Carro MUITO
-Link: https://www.anisioautomoveis.com.br/veiculo/556374-fiorino-furgao-1-4-flex-endurance/
+Cor: Prata
+Portas: 4
+Quilometragem: 97000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/135191.37339608b5dad69.jpg
+Descrição: MARAVILHOSA, toda original, sem detalhes na pintura, LAUDO APROVADO SE RESTRIÇÕES, manual com todas revisões na concessionária (sem pular nenhuma), chave cópia sem uso, TETO SOLAR, MIDIA e rodas aro 18 originais, pneus novos, estepe sem uso. (Carro MUITO CONSERVADO MESMO, TODO REVISADO e com TETO SO
+Opcionais: 4 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático
 
 --- VEÍCULO 11 ---
-Marca: Audi
-Modelo: Q3 1.4 4P 35 TFSI PRESTIGE PLUS S-TRONIC AUTOMÁTICO
-Ano: 2018/19
-Preço: R$ 119.990,00
-Cor: Prata
-KM: 97000
+Nome: Fiat Fiorino Furgão
+Marca: Fiat
+Versão: 1.4 FLEX ENDURANCE
+Preço: R$ 81.990,00
+Ano/Modelo: 2022/2023
+Câmbio: Manual
 Combustível: Flex
-Câmbio: N/A
-Portas: 4
-Descrição: MARAVILHOSA, toda original, sem detalhes na pintura, LAUDO APROVADO SE RESTRIÇÕES, manual com todas revisões na concessionária (sem pular nenhuma), chave cópia sem uso, TETO SOLAR, MIDIA e rodas aro 1
-Link: https://www.anisioautomoveis.com.br/veiculo/556178-q3-1-4-4p-35-tfsi-prestige-plus-s-tronic-automatico/
+Cor: Branco
+Portas: 2
+Quilometragem: 67000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/135282.d9430894fd20492.jpg
+Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, pneus novos, interior do furgão em ótimo estado. (Carro MUITO CONSERVADO, SEM DETALHES).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Câmbio Manual, CD Player, Direção Hidráulica, Freios ABS, Insul Film, Trava Elétricas, Vidros Elétricos, Vidros Verdes
 
 --- VEÍCULO 12 ---
-Marca: Toyota
-Modelo: COROLLA CROSS 1.8 16V 4P FLEX VVT-I HYBRID XRX AUTOMÁTICO CVT
-Ano: 2021/22
-Preço: R$ 144.990,00
-Cor: Prata
-KM: 89000
+Nome: Volkswagen Jetta
+Marca: Volkswagen
+Versão: 1.4 16V 4P TSI COMFORTLINE AUTOMÁTICO
+Preço: R$ 106.990,00
+Ano/Modelo: 2018/2019
+Câmbio: Automático
 Combustível: Flex
-Câmbio: N/A
+Cor: Branco
 Portas: 4
-Descrição: NIVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade com todas revisões feitas em Piracicaba (Sem pular nenhuma) e com GARANTIA de FABRICA até
-Link: https://www.anisioautomoveis.com.br/veiculo/556165-corolla-cross-1-8-16v-4p-flex-vvt-i-hybrid-xrx-automatico-cvt/
+Quilometragem: 125000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/135491.748d3f89ac6e3b1.jpg
+Descrição: MARAVILHOSO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, manual com todas revisões na concessionária (SEM PULAR NENHUMA), chave cópia, TETO SOLAR e MIDIA originais, rodas aro 18 e 4 pneus ZERO, estepe sem uso. (Carro MUITO CONSERVADO MESMO, NÃO TEM DETALHES).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Freios ABS, GPS, Insul Film, Multimídia, Retrovisores Elétricos, Revisado Concessionária, Sensor de Estacionamento, Teto Solar, Trava Elétricas
 
 --- VEÍCULO 13 ---
+Nome: Fiat Toro
 Marca: Fiat
-Modelo: TORO 1.3 16V 4P FLEX 270 TURBO FREEDOM AUTOMÁTICO
-Ano: 2024/24
-Preço: R$ 124.990,00
-Cor: Branco
-KM: 54000
+Versão: 1.3 16V 4P FLEX 270 TURBO FREEDOM AUTOMÁTICO
+Preço: R$ 114.990,00
+Ano/Modelo: 2022/2023
+Câmbio: Automático
 Combustível: Flex
-Câmbio: N/A
+Cor: Cinza
 Portas: 4
-Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, MIDIA e rodas originais, pneus novos. (Carro MUITO CONSERVADO
-Link: https://www.anisioautomoveis.com.br/veiculo/555060-toro-1-3-16v-4p-flex-270-turbo-freedom-automatico/
+Quilometragem: 64000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/135779.3acf806e63682e5.jpg
+Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, MIDIA e rodas originais, pneus novos, estepe sem uso. (Carro MUITO NOVO, SEM DETALHES).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Insul Film, Lona Marítima, Multimídia, Retrovisores Elétricos, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos
 
 --- VEÍCULO 14 ---
-Marca: Jeep
-Modelo: RENEGADE 2.0 16V 4P TURBO DIESEL LIMITED 4X4 AUTOMÁTICO
-Ano: 2018/18
-Preço: R$ 89.990,00
-Cor: Branco
-KM: 103000
-Combustível: Diesel
-Câmbio: N/A
+Nome: Hyundai Creta
+Marca: Hyundai
+Versão: 1.6 16V 4P FLEX ACTION AUTOMÁTICO
+Preço: R$ 104.990,00
+Ano/Modelo: 2024/2024
+Câmbio: Automático
+Combustível: Flex
+Cor: Preto
 Portas: 4
-Descrição: Nome*Celular*E-mail*
-                            
-                        Troca
-								
-								Quero dar veículo na troca
-							Financiamento
-								
-								Quero financiar
-							Qual a sua prop
-Link: https://www.anisioautomoveis.com.br/veiculo/552514-renegade-2-0-16v-4p-turbo-diesel-limited-4x4-automatico/
+Quilometragem: 52000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/135782.b547c791f96bcaa.jpg
+Descrição: MARAVILHOSA, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, SOM e rodas originais, pneus novos, estepe sem uso. (Carro MUITO NOVO MESMO, TODO ORIGINAL).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Neblina, Freios ABS, Insul Film, Limpador Traseiro, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos, Vidros Verdes
 
 --- VEÍCULO 15 ---
-Marca: Honda
-Modelo: FIT 1.5 16V 4P LX FLEX
-Ano: 2015/15
-Preço: R$ 61.990,00
-Cor: Cinza
-KM: 136000
+Nome: Nissan Kicks
+Marca: Nissan
+Versão: 1.6 16V 4P FLEXSTART SENSE XTRONIC AUTOMÁTICO CVT
+Preço: R$ 101.990,00
+Ano/Modelo: 2024/2024
+Câmbio: Automático
 Combustível: Flex
-Câmbio: N/A
+Cor: Preto
 Portas: 4
-Descrição: IMPECÁVEL, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, SOM e rodas originais, 4 pneus novos, estepe sem uso. (Carro 
-Link: https://www.anisioautomoveis.com.br/veiculo/549500-fit-1-5-16v-4p-lx-flex/
+Quilometragem: 31000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/136846.0f751bf102b57d5.jpg
+Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, MIDIA e rodas originais, pneus novos, estepe sem uso. (Carro SUPER NOVO, SÓ 31.000 Km RODADOS).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Freios ABS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Rodas de Liga Leves, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos
 
 --- VEÍCULO 16 ---
+Nome: Jeep Renegade
 Marca: Jeep
-Modelo: COMPASS 2.0 16V 4P FLEX SPORT AUTOMÁTICO
-Ano: 2019/20
-Preço: R$ 91.990,00
-Cor: Cinza
-KM: 87000
+Versão: 1.3 16V 4P FLEX T270 LONGITUDE TURBO AUTOMÁTICO
+Preço: R$ 114.990,00
+Ano/Modelo: 2025/2025
+Câmbio: Automático
 Combustível: Flex
-Câmbio: N/A
+Cor: Preto
 Portas: 4
-Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, manual com todas revisões na concessionária, chave cópia, interior perfeito, MIDIA e rodas originais, pneus novos, est
-Link: https://www.anisioautomoveis.com.br/veiculo/541306-compass-2-0-16v-4p-flex-sport-automatico/
+Quilometragem: 28000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/136847.57617c255875d51.jpg
+Descrição: MARAVILHOSO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior em couro impecável, MIDIA e rodas aro 18 originais, pneus novos, estepe sem uso. (Carro MUITO NOVO MESMO, NUNCA BATEU, SÓ 28.000 Km RODADOS).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Farol de Xenon, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia
 
 --- VEÍCULO 17 ---
-Marca: Volkswagen
-Modelo: VIRTUS 1.0 4P 170 TSI
-Ano: 2024/24
-Preço: R$ 94.990,00
-Cor: Branco
-KM: 9000
+Nome: Chevrolet Onix Sedan
+Marca: Chevrolet
+Versão: 1.0 12V 4P FLEX LT PLUS
+Preço: R$ 71.990,00
+Ano/Modelo: 2024/2025
+Câmbio: Manual
 Combustível: Flex
-Câmbio: N/A
+Cor: Preto
 Portas: 4
-Descrição: (IPVA 2026 PAGO TOTAL), MARAVILHOSO, SÓ 9.000 Km, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA e 
-Link: https://www.anisioautomoveis.com.br/veiculo/541282-virtus-1-0-4p-170-tsi/
+Quilometragem: 55000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/136931.ec683a8b7716584.jpg
+Descrição: IMPECÁVEL, todo original, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual com revisão na concessionária e GARANTIA de FABRICA p/ 10 anos na correia de óleo, chave cópia, interior perfeito, MIDIA original, pneus novos, estepe sem uso. (Carro MUITO BONITO MESMO).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Multimídia, Revisado Concessionária, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos, Vidros Verdes
 
 --- VEÍCULO 18 ---
+Nome: Volkswagen Saveiro
 Marca: Volkswagen
-Modelo: VIRTUS 1.0 4P 170 TSI AUTOMÁTICO
-Ano: 2024/25
-Preço: R$ 104.990,00
-Cor: Preto
-KM: 48000
+Versão: 1.6 16V FLEX MSI ROBUST CABINE SIMPLES
+Preço: R$ 72.990,00
+Ano/Modelo: 2024/2024
+Câmbio: Manual
 Combustível: Flex
-Câmbio: N/A
+Cor: Prata
 Portas: 4
-Descrição: (IPVA 2026 PAGO TOTAL), NOVÍSSIMO, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA e rodas originais, pneus, este
-Link: https://www.anisioautomoveis.com.br/veiculo/541270-virtus-1-0-4p-170-tsi-automatico/
+Quilometragem: 36000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/136933.ebbaa8fa933fa49.jpg
+Descrição: IMPECÁVEL, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, pneus novos estepe sem uso, (Carro MUITO NOVO, só 36.000 Km RODADOS)
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player, Direção Hidráulica, Freios ABS, Trava Elétricas, Vidros Elétricos, Vidros Verdes
 
 --- VEÍCULO 19 ---
-Marca: Chevrolet
-Modelo: MONTANA 1.2 12V FLEX LT TURBO
-Ano: 2023/24
-Preço: R$ 104.990,00
-Cor: Preto
-KM: 49000
+Nome: Volkswagen Polo Hatch
+Marca: Volkswagen
+Versão: 1.0 12V 4P MPI TRACK 1st EDITION
+Preço: R$ 71.990,00
+Ano/Modelo: 2024/2025
+Câmbio: Manual
 Combustível: Flex
-Câmbio: N/A
+Cor: Branco
 Portas: 4
-Descrição: (1PVA 2026 PAGO TOTAL), Impecável, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, MIDIA original, pneus novos, estepe s
-Link: https://www.anisioautomoveis.com.br/veiculo/540441-montana-1-2-12v-flex-lt-turbo/
+Quilometragem: 44000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/136962.c8466c5fd17d29d.jpg
+Descrição: MARAVILHOSO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA original, 4 pneus ZERO, estepe sem uso. (Carro MUITO NOVO MESMO, TODO ORIGINAL).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos
 
 --- VEÍCULO 20 ---
-Marca: Chery
-Modelo: TIGGO 5X 1.5 4P TXS FLEX TURBO AUTOMÁTICO DCT
-Ano: 2019/20
-Preço: R$ 79.990,00
-Cor: Cinza
-KM: 102000
+Nome: Volkswagen T-Cross
+Marca: Volkswagen
+Versão: 1.0 4P 200 TSI FLEX AUTOMÁTICO
+Preço: R$ 117.990,00
+Ano/Modelo: 2024/2025
+Câmbio: Automático
 Combustível: Flex
-Câmbio: N/A
+Cor: Prata
 Portas: 4
-Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual com todas revisões na concessionária SEM PULAR NENHUMA, chave cópia, interior imp
-Link: https://www.anisioautomoveis.com.br/veiculo/534554-tiggo-5x-1-5-4p-txs-flex-turbo-automatico-dct/
+Quilometragem: 45000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/137135.e7e4f6e480fa6e1.jpg
+Descrição: NOVÍSSIMO, todo original, sem retoques na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA e rodas aro 17 originais, pneus novos. (Carro MUITO NOVO MESMO, NUNCA BATEU).
+Opcionais: 2 Air Bags, Alarme Original, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Estepe sem Uso, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Rodas de Liga Leves, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos, Vidros Verdes, Volante com Regulagem de Altura
+
+--- VEÍCULO 21 ---
+Nome: Hyundai HB 20 Sedan
+Marca: Hyundai
+Versão: 1.0 12V 4P FLEX TGDI TURBO DIAMOND PLUS AUTOMÁTICO
+Preço: R$ 74.990,00
+Ano/Modelo: 2019/2020
+Câmbio: Automático
+Combustível: Flex
+Cor: Bege
+Portas: 4
+Quilometragem: 107000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/137137.c25e43c7ac7f234.jpg
+Descrição: IMPECÁVEL, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro tirado zero na cidade (NUNCA FOI DE LOCADORA), manual com todas revisões em Piracicaba (NÃO PULOU NENHUMA), chave cópia, interior perfeito, MIDIA e rodas originais, pneus zero, estepe sem uso. (Carro MUITO CONSER
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento

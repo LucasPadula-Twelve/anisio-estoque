@@ -1,31 +1,32 @@
 #!/usr/bin/env python3
 """
-Scraper Anísio Automóveis - Selenium
-Extrai todos os veículos do estoque, gera base de conhecimento para o Omni
-e mantém histórico de veículos vendidos.
+Scraper da Anísio Automóveis - Feed XML Integra Carros
+======================================================
+Consome o feed XML do Integra Carros para obter o estoque atualizado.
+Substitui o scraping via Playwright/Selenium que era bloqueado por anti-bot.
 
-Uso diário: python3 scraper_anisio.py
+URL do Feed: https://cliente.integracarros.com.br/site/24cde81a05336ba
+Formato: XML com estrutura <estoque><veiculo>...</veiculo></estoque>
+
+Uso: python3 scraper_anisio.py
+Agendamento: Executar diariamente às 7h da manhã
 """
 
 import json
-import csv
 import os
 import re
-import time
-import subprocess
+import csv
 import shutil
+import subprocess
+import xml.etree.ElementTree as ET
 from datetime import datetime
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+
+import requests
 
 # ============================================================
 # CONFIGURAÇÕES
 # ============================================================
-BASE_URL = "https://www.anisioautomoveis.com.br"
-ESTOQUE_URL = f"{BASE_URL}/estoque/"
+FEED_URL = "https://cliente.integracarros.com.br/site/24cde81a05336ba"
 OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
 ESTOQUE_JSON = os.path.join(OUTPUT_DIR, "estoque_atual.json")
 HISTORICO_JSON = os.path.join(OUTPUT_DIR, "historico_vendidos.json")
@@ -36,8 +37,10 @@ LOG_FILE = os.path.join(OUTPUT_DIR, "scraper_log.txt")
 # GitHub - Repositório para publicação da base de conhecimento
 GITHUB_REPO = "LucasPadula-Twelve/anisio-estoque"
 GITHUB_BRANCH = "main"
-# URL pública raw do GitHub (após push)
 GITHUB_RAW_URL = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/base_conhecimento_omni.txt"
+
+# URL base do site para links dos veículos
+SITE_BASE_URL = "https://www.anisioautomoveis.com.br/veiculo/"
 
 
 def log(msg):
@@ -49,285 +52,129 @@ def log(msg):
         f.write(line + "\n")
 
 
-def criar_driver():
-    """Cria e retorna uma instância do Chrome WebDriver."""
-    options = Options()
-    options.add_argument("--headless")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--window-size=1920,1080")
-    options.add_argument("--lang=pt-BR")
-    options.add_argument(
-        "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
-    )
-    options.binary_location = "/usr/bin/chromium-browser"
-    driver = webdriver.Chrome(options=options)
-    driver.set_page_load_timeout(60)
-    return driver
-
-
-def coletar_urls_veiculos(driver):
-    """Acessa a página de estoque e coleta todas as URLs dos veículos."""
-    log("Acessando página de estoque...")
-    driver.get(ESTOQUE_URL)
-    time.sleep(3)
-
-    urls = set()
-
-    # Clicar em "Mais veículos" até não haver mais
-    while True:
-        # Coletar URLs visíveis
-        links = driver.find_elements(By.CSS_SELECTOR, 'a[href*="/veiculo/"]')
-        for link in links:
-            href = link.get_attribute("href")
-            if href and "/veiculo/" in href and href != f"{BASE_URL}/veiculo/":
-                # Filtrar apenas links de veículos individuais (com ID numérico)
-                parts = href.replace(f"{BASE_URL}/veiculo/", "").strip("/")
-                if parts and parts[0].isdigit():
-                    urls.add(href)
-
-        # Tentar clicar em "Mais veículos"
-        try:
-            load_more = driver.find_element(By.CSS_SELECTOR, "button.facetwp-load-more")
-            if load_more.is_displayed() and load_more.is_enabled():
-                driver.execute_script("arguments[0].click();", load_more)
-                log(f"  Clicou 'Mais veículos'... ({len(urls)} URLs coletadas até agora)")
-                time.sleep(3)
-            else:
-                break
-        except Exception:
-            break
-
-    # Coletar URLs após último clique
-    links = driver.find_elements(By.CSS_SELECTOR, 'a[href*="/veiculo/"]')
-    for link in links:
-        href = link.get_attribute("href")
-        if href and "/veiculo/" in href and href != f"{BASE_URL}/veiculo/":
-            parts = href.replace(f"{BASE_URL}/veiculo/", "").strip("/")
-            if parts and parts[0].isdigit():
-                urls.add(href)
-
-    log(f"Total de {len(urls)} veículos encontrados no estoque.")
-    return sorted(urls)
-
-
-def extrair_dados_veiculo(driver, url):
-    """Acessa a página de um veículo e extrai todos os dados disponíveis."""
-    driver.get(url)
-    time.sleep(2)
-
-    veiculo = {
-        "url": url,
-        "id": url.split("/veiculo/")[1].split("-")[0] if "/veiculo/" in url else "",
-        "data_coleta": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-    }
-
-    # Nome do veículo
+def fetch_xml_feed():
+    """Baixa o feed XML do Integra Carros."""
+    log(f"Baixando feed XML: {FEED_URL}")
     try:
-        titulo = driver.find_element(By.CSS_SELECTOR, "h1, .fl-heading-text")
-        veiculo["nome"] = titulo.text.strip()
-    except Exception:
-        veiculo["nome"] = ""
+        response = requests.get(FEED_URL, timeout=30)
+        response.raise_for_status()
+        log(f"Feed baixado com sucesso: {len(response.content)} bytes")
+        return response.content
+    except requests.RequestException as e:
+        log(f"ERRO ao baixar feed: {e}")
+        return None
 
-    # Preço
+
+def parse_xml_feed(xml_content):
+    """Parseia o XML e extrai os veículos no formato compatível com o pipeline."""
     try:
-        preco_el = driver.find_element(By.XPATH, "//*[contains(text(), 'R$')]")
-        preco_text = preco_el.text.strip()
-        # Pegar apenas a primeira linha com R$
-        for line in preco_text.split("\n"):
-            if "R$" in line:
-                veiculo["preco"] = line.strip()
-                break
-    except Exception:
-        veiculo["preco"] = ""
+        root = ET.fromstring(xml_content)
+    except ET.ParseError as e:
+        log(f"ERRO ao parsear XML: {e}")
+        return []
 
-    # Ficha técnica (tabela de dados)
-    ficha = {}
-    try:
-        # Procurar pares label/valor na ficha técnica
-        labels = driver.find_elements(By.CSS_SELECTOR, ".fl-post-info-term")
-        values = driver.find_elements(By.CSS_SELECTOR, ".fl-post-info-value")
-        for label, value in zip(labels, values):
-            key = label.text.strip().lower().replace("/", "_").replace(" ", "_")
-            val = value.text.strip()
-            if key and val:
-                ficha[key] = val
-    except Exception:
-        pass
+    vehicles = []
 
-    # Fallback: tentar extrair dados da ficha de outra forma
-    if not ficha:
-        try:
-            info_items = driver.find_elements(By.CSS_SELECTOR, ".q11-post-info-item, .fl-post-info-item")
-            for item in info_items:
-                text = item.text.strip()
-                if ":" in text:
-                    parts = text.split(":", 1)
-                    key = parts[0].strip().lower().replace("/", "_").replace(" ", "_")
-                    val = parts[1].strip()
-                    if key and val:
-                        ficha[key] = val
-        except Exception:
-            pass
+    for veiculo in root.findall('veiculo'):
+        # Extrair campos do XML
+        hash_id = veiculo.findtext('hash', '')
+        placa = veiculo.findtext('placa', '')
+        marca = veiculo.findtext('marca', '')
+        modelo = veiculo.findtext('modelo', '')
+        submodelo = veiculo.findtext('submodelo', '')
+        ano = veiculo.findtext('ano', '')
+        ano_fab = veiculo.findtext('ano_fab', '')
+        cor = veiculo.findtext('cor', '')
+        combustivel = veiculo.findtext('combustivel', '')
+        km = veiculo.findtext('km', '')
+        portas = veiculo.findtext('portas', '')
+        valor = veiculo.findtext('valor', '')
+        observacao = veiculo.findtext('observacao', '')
+        cambio = veiculo.findtext('cambio', '')
+        tipo = veiculo.findtext('tipo', '')
+        data_cadastro = veiculo.findtext('data_cadastro', '')
+        data_modificacao = veiculo.findtext('data_modificacao', '')
 
-    # Fallback 2: extrair da meta/title da página
-    # Formato: "Honda HR-V 1.5 ... 2019/20 Gasolina Vinho 4P 81.000 km em Piracicaba"
-    try:
-        title = driver.title
-        veiculo["titulo_pagina"] = title
-        # Extrair campos faltantes do título
-
-        # Ano/Modelo: padrão XXXX/XX ou XXXX/XXXX
-        if "ano_modelo" not in ficha or not ficha.get("ano_modelo"):
-            ano_match = re.search(r'(\d{4}/\d{2,4})', title)
-            if ano_match:
-                ficha["ano_modelo"] = ano_match.group(1)
-        # Combustível
-        combustiveis = ["Gasolina", "Flex", "Diesel", "Elétrico", "Híbrido", "GNV"]
-        if "combustivel" not in ficha or not ficha.get("combustivel"):
-            for comb in combustiveis:
-                if comb.lower() in title.lower():
-                    ficha["combustivel"] = comb
-                    break
-        # Cor
-        cores = ["Branco", "Preto", "Prata", "Cinza", "Vermelho", "Azul", "Vinho",
-                 "Verde", "Amarelo", "Marrom", "Bege", "Dourado", "Laranja", "Grafite"]
-        if "cor" not in ficha or not ficha.get("cor"):
-            for cor in cores:
-                if cor.lower() in title.lower():
-                    ficha["cor"] = cor
-                    break
-        # KM
-        if "km" not in ficha or not ficha.get("km"):
-            km_match = re.search(r'([\d\.]+)\s*km', title.lower())
-            if km_match:
-                ficha["km"] = km_match.group(1)
-        # Portas
-        if "portas" not in ficha or not ficha.get("portas"):
-            portas_match = re.search(r'(\d)P', title)
-            if portas_match:
-                ficha["portas"] = portas_match.group(1)
-    except Exception:
-        pass
-
-    # Tentar extrair campos específicos via XPath
-    campos_xpath = {
-        "ano_modelo": "ANO/MODELO",
-        "cambio": "CÂMBIO",
-        "combustivel": "COMBUSTÍVEL",
-        "cor": "COR",
-        "portas": "PORTAS",
-        "km": "KM",
-    }
-    for campo, label_text in campos_xpath.items():
-        if campo not in ficha or not ficha.get(campo):
-            try:
-                label_el = driver.find_element(
-                    By.XPATH,
-                    f"//*[contains(translate(text(), 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'), '{label_text}')]"
-                )
-                parent = label_el.find_element(By.XPATH, "..")
-                all_text = parent.text.strip()
-                if label_text in all_text.upper():
-                    val = all_text.upper().replace(label_text, "").strip().strip(":")
-                    if val:
-                        ficha[campo] = val
-            except Exception:
-                pass
-
-    # Câmbio: inferir dos opcionais se não encontrado
-    if "cambio" not in ficha or not ficha.get("cambio"):
-        nome_lower = veiculo.get("nome", "").lower()
-        if "automático" in nome_lower or "automatico" in nome_lower or "cvt" in nome_lower:
-            ficha["cambio"] = "Automático"
-        else:
-            ficha["cambio"] = "Manual"
-
-    veiculo["ficha_tecnica"] = ficha
-
-    # Marca (extrair do título da página ou do card)
-    try:
-        # Tentar pegar a marca do breadcrumb ou de um elemento específico
-        marca_el = driver.find_elements(By.CSS_SELECTOR, ".fl-post-info-value")
-        # A marca geralmente aparece no título da página
-        title = driver.title
-        marcas_conhecidas = [
-            "Honda", "Volkswagen", "Fiat", "Chevrolet", "Jeep", "Hyundai",
-            "Toyota", "Nissan", "Renault", "Ford", "Chery", "Peugeot",
-            "Citroën", "Mitsubishi", "Kia", "BMW", "Mercedes", "Audi"
-        ]
-        veiculo["marca"] = ""
-        for marca in marcas_conhecidas:
-            if marca.lower() in title.lower():
-                veiculo["marca"] = marca
-                break
-    except Exception:
-        veiculo["marca"] = ""
-
-    # Descrição
-    try:
-        desc_elements = driver.find_elements(By.CSS_SELECTOR, ".fl-module-content .fl-rich-text p, .fl-module-content .fl-rich-text")
-        descricao_parts = []
-        for el in desc_elements:
-            text = el.text.strip()
-            if text and len(text) > 20 and "R$" not in text and "CARACTERÍSTICAS" not in text.upper():
-                descricao_parts.append(text)
-        veiculo["descricao"] = " ".join(descricao_parts).strip()
-    except Exception:
-        veiculo["descricao"] = ""
-
-    # Fallback para descrição
-    if not veiculo["descricao"]:
-        try:
-            all_text = driver.find_element(By.TAG_NAME, "body").text
-            # Procurar bloco de texto descritivo (geralmente contém "IPVA", "LAUDO", etc.)
-            for line in all_text.split("\n"):
-                line = line.strip()
-                if any(kw in line.upper() for kw in ["IPVA", "LAUDO", "IMPECÁVEL", "CONSERVADO", "REVISÕES", "MANUAL"]):
-                    veiculo["descricao"] = line
-                    break
-        except Exception:
-            pass
-
-    # Características / Opcionais
-    try:
-        caracteristicas = []
-        # Procurar a seção de características
-        body_text = driver.find_element(By.TAG_NAME, "body").text
-        in_caract = False
-        for line in body_text.split("\n"):
-            line = line.strip()
-            if "CARACTERÍSTICAS" in line.upper() or "CARACTERISTICAS" in line.upper():
-                in_caract = True
-                continue
-            if in_caract:
-                if line and line.isupper() and len(line) > 2 and "VER TODO" not in line.upper():
-                    caracteristicas.append(line)
-                elif line and not line.isupper() and len(caracteristicas) > 0:
-                    # Fim da seção de características
-                    break
-        veiculo["caracteristicas"] = caracteristicas
-    except Exception:
-        veiculo["caracteristicas"] = []
-
-    # Fotos
-    try:
+        # Imagens
         fotos = []
-        imgs = driver.find_elements(By.CSS_SELECTOR, "img[src*='wp-content/uploads']")
-        for img in imgs:
-            src = img.get_attribute("src") or img.get_attribute("data-src")
-            if src and "uploads" in src:
-                # Remover parâmetros de resize
-                clean_src = src.split("?")[0] if "?" in src else src
-                if clean_src not in fotos:
-                    fotos.append(clean_src)
-        veiculo["fotos"] = fotos
-    except Exception:
-        veiculo["fotos"] = []
+        imagens_el = veiculo.find('imagens')
+        if imagens_el is not None:
+            for img in imagens_el.findall('imagem'):
+                if img.text:
+                    fotos.append(img.text.strip())
 
-    return veiculo
+        # Opcionais
+        caracteristicas = []
+        opcionais_el = veiculo.find('opcionais')
+        if opcionais_el is not None:
+            for opc in opcionais_el.findall('opcional'):
+                if opc.text:
+                    caracteristicas.append(opc.text.strip())
+
+        # Formatar preço
+        preco_formatado = ''
+        if valor:
+            try:
+                preco_float = float(valor)
+                preco_formatado = f"R$ {preco_float:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.')
+            except ValueError:
+                preco_formatado = valor
+
+        # Formatar ano
+        ano_modelo = ''
+        if ano_fab and ano:
+            ano_modelo = f"{ano_fab}/{ano}"
+        elif ano:
+            ano_modelo = ano
+
+        # Nome completo do veículo
+        nome_completo = f"{marca.title()} {modelo}"
+
+        # Gerar URL do veículo no site
+        slug = f"{hash_id}-{marca}-{modelo}".lower().replace(' ', '-')
+        slug = re.sub(r'[^a-z0-9\-]', '', slug)
+        url_veiculo = f"{SITE_BASE_URL}{slug}"
+
+        # Limpar descrição (remover telefones, WhatsApp, etc.)
+        descricao_limpa = observacao if observacao else ''
+        if descricao_limpa:
+            descricao_limpa = re.sub(r'\(?\d{2}\)?\s*\d{4,5}[-\s]?\d{4}', '', descricao_limpa)
+            descricao_limpa = re.sub(r'[Ww]hats?[Aa]pp?', '', descricao_limpa)
+            descricao_limpa = re.sub(r'[Zz][Aa][Pp]', '', descricao_limpa)
+            descricao_limpa = re.sub(r'\s+', ' ', descricao_limpa).strip()
+
+        # Montar veículo no formato compatível com o pipeline existente
+        # (mesmas chaves que o scraper Selenium gerava)
+        vehicle = {
+            'id': hash_id,
+            'url': url_veiculo,
+            'data_coleta': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            'titulo_pagina': f"{nome_completo} {submodelo} {ano_modelo} {combustivel} {cor} {portas}P {km} km",
+            'nome': nome_completo,
+            'preco': preco_formatado,
+            'ficha_tecnica': {
+                'ano_modelo': ano_modelo,
+                'combustivel': combustivel,
+                'cor': cor,
+                'km': km,
+                'portas': portas,
+                'cambio': cambio,
+            },
+            'marca': marca.title() if marca else '',
+            'descricao': descricao_limpa,
+            'caracteristicas': caracteristicas,
+            'fotos': fotos,
+            # Campos extras do feed Integra (bônus)
+            'submodelo': submodelo,
+            'valor_numerico': valor,
+            'tipo': tipo,
+            'data_cadastro': data_cadastro,
+            'data_modificacao': data_modificacao,
+        }
+
+        vehicles.append(vehicle)
+
+    return vehicles
 
 
 def atualizar_historico(estoque_atual):
@@ -350,7 +197,7 @@ def atualizar_historico(estoque_atual):
         except Exception:
             historico = []
 
-    # IDs atuais
+    # IDs atuais vs anteriores
     ids_atuais = {v["id"] for v in estoque_atual}
     ids_anteriores = {v["id"] for v in estoque_anterior}
 
@@ -390,6 +237,8 @@ def gerar_base_conhecimento(estoque):
     lines.append("BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS")
     lines.append(f"Atualizado em: {datetime.now().strftime('%d/%m/%Y às %H:%M')}")
     lines.append(f"Total de veículos disponíveis: {len(estoque)}")
+    lines.append("Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP")
+    lines.append("Horário: Seg-Sex 8h-18h | Sáb 8h-12h")
     lines.append("=" * 60)
     lines.append("")
 
@@ -398,20 +247,23 @@ def gerar_base_conhecimento(estoque):
         lines.append(f"--- VEÍCULO {i} ---")
         lines.append(f"Nome: {v.get('nome', 'N/A')}")
         lines.append(f"Marca: {v.get('marca', 'N/A')}")
+        if v.get('submodelo'):
+            lines.append(f"Versão: {v['submodelo']}")
         lines.append(f"Preço: {v.get('preco', 'N/A')}")
-        lines.append(f"Ano/Modelo: {ficha.get('ano_modelo', ficha.get('ano/modelo', 'N/A'))}")
-        lines.append(f"Câmbio: {ficha.get('cambio', ficha.get('câmbio', 'N/A'))}")
-        lines.append(f"Combustível: {ficha.get('combustivel', ficha.get('combustível', 'N/A'))}")
+        lines.append(f"Ano/Modelo: {ficha.get('ano_modelo', 'N/A')}")
+        lines.append(f"Câmbio: {ficha.get('cambio', 'N/A')}")
+        lines.append(f"Combustível: {ficha.get('combustivel', 'N/A')}")
         lines.append(f"Cor: {ficha.get('cor', 'N/A')}")
         lines.append(f"Portas: {ficha.get('portas', 'N/A')}")
         lines.append(f"Quilometragem: {ficha.get('km', 'N/A')}")
-        lines.append(f"Link: {v.get('url', 'N/A')}")
+        if v.get('fotos'):
+            lines.append(f"Foto: {v['fotos'][0]}")
 
         if v.get("descricao"):
-            lines.append(f"Descrição: {v['descricao']}")
+            lines.append(f"Descrição: {v['descricao'][:300]}")
 
         if v.get("caracteristicas"):
-            lines.append(f"Opcionais: {', '.join(v['caracteristicas'])}")
+            lines.append(f"Opcionais: {', '.join(v['caracteristicas'][:20])}")
 
         lines.append("")
 
@@ -419,7 +271,7 @@ def gerar_base_conhecimento(estoque):
     with open(BASE_CONHECIMENTO_TXT, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
-    log(f"Base de conhecimento gerada: {BASE_CONHECIMENTO_TXT}")
+    log(f"Base de conhecimento gerada: {BASE_CONHECIMENTO_TXT} ({len(estoque)} veículos)")
 
 
 def gerar_csv(estoque):
@@ -429,167 +281,145 @@ def gerar_csv(estoque):
 
     fieldnames = [
         "id", "nome", "marca", "preco", "ano_modelo", "cambio",
-        "combustivel", "cor", "portas", "km", "descricao",
-        "opcionais", "url", "data_coleta"
+        "combustivel", "cor", "portas", "km", "descricao", "opcionais",
+        "url", "data_coleta", "foto"
     ]
 
     with open(ESTOQUE_CSV, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
+
         for v in estoque:
-            ficha = v.get("ficha_tecnica", {})
+            ft = v.get("ficha_tecnica", {})
             row = {
                 "id": v.get("id", ""),
                 "nome": v.get("nome", ""),
                 "marca": v.get("marca", ""),
                 "preco": v.get("preco", ""),
-                "ano_modelo": ficha.get("ano_modelo", ficha.get("ano/modelo", "")),
-                "cambio": ficha.get("cambio", ficha.get("câmbio", "")),
-                "combustivel": ficha.get("combustivel", ficha.get("combustível", "")),
-                "cor": ficha.get("cor", ""),
-                "portas": ficha.get("portas", ""),
-                "km": ficha.get("km", ""),
-                "descricao": v.get("descricao", ""),
-                "opcionais": ", ".join(v.get("caracteristicas", [])),
+                "ano_modelo": ft.get("ano_modelo", ""),
+                "cambio": ft.get("cambio", ""),
+                "combustivel": ft.get("combustivel", ""),
+                "cor": ft.get("cor", ""),
+                "portas": ft.get("portas", ""),
+                "km": ft.get("km", ""),
+                "descricao": v.get("descricao", "")[:200],
+                "opcionais": ", ".join(v.get("caracteristicas", [])[:10]),
                 "url": v.get("url", ""),
                 "data_coleta": v.get("data_coleta", ""),
+                "foto": v.get("fotos", [""])[0] if v.get("fotos") else "",
             }
             writer.writerow(row)
 
     log(f"CSV gerado: {ESTOQUE_CSV}")
 
 
-def publicar_no_github():
-    """Faz commit e push dos arquivos atualizados para o GitHub."""
+def publicar_github():
+    """Publica as alterações no GitHub."""
     try:
-        log("Publicando no GitHub...")
-        
-        # Verificar se estamos dentro de um repositório git
-        git_dir = os.path.join(OUTPUT_DIR, ".git")
-        if not os.path.exists(git_dir):
-            log("  Repositório git não encontrado. Clonando...")
-            # Clonar em diretório temporário e mover .git
-            tmp_dir = os.path.join(OUTPUT_DIR, "_tmp_clone")
-            subprocess.run(
-                ["gh", "repo", "clone", GITHUB_REPO, tmp_dir],
-                capture_output=True, text=True, cwd=OUTPUT_DIR
-            )
-            # Mover .git para o diretório de trabalho
-            shutil.move(os.path.join(tmp_dir, ".git"), git_dir)
-            shutil.rmtree(tmp_dir, ignore_errors=True)
-            # Configurar git
-            subprocess.run(["git", "config", "user.email", "scraper@anisio.com.br"], cwd=OUTPUT_DIR)
-            subprocess.run(["git", "config", "user.name", "Scraper Anisio"], cwd=OUTPUT_DIR)
-        
-        # Adicionar arquivos relevantes
-        arquivos = [
-            "base_conhecimento_omni.txt",
-            "estoque_atual.json",
-            "estoque_atual.csv",
-            "historico_vendidos.json",
-        ]
-        for arq in arquivos:
-            caminho = os.path.join(OUTPUT_DIR, arq)
-            if os.path.exists(caminho):
-                subprocess.run(["git", "add", arq], cwd=OUTPUT_DIR)
-        
-        # Commit com data/hora
-        data_hora = datetime.now().strftime("%d/%m/%Y %H:%M")
-        msg = f"Atualização automática do estoque - {data_hora}"
+        # Verificar se é um repositório git
         result = subprocess.run(
-            ["git", "commit", "-m", msg],
-            capture_output=True, text=True, cwd=OUTPUT_DIR
+            ['git', 'status'], capture_output=True, text=True, cwd=OUTPUT_DIR
         )
-        
-        if "nothing to commit" in result.stdout:
-            log("  Nenhuma alteração no estoque. Nada para publicar.")
+        if result.returncode != 0:
+            log("Diretório não é um repositório git - pulando publicação")
+            return False
+
+        # Add, commit e push
+        subprocess.run(['git', 'add', '.'], cwd=OUTPUT_DIR, capture_output=True)
+
+        commit_msg = f"Atualização estoque {datetime.now().strftime('%d/%m/%Y %H:%M')} - Feed Integra Carros"
+        result = subprocess.run(
+            ['git', 'commit', '-m', commit_msg],
+            cwd=OUTPUT_DIR, capture_output=True, text=True
+        )
+
+        if 'nothing to commit' in (result.stdout + result.stderr):
+            log("Sem alterações para commitar")
             return True
-        
-        # Push
+
         result = subprocess.run(
-            ["git", "push", "origin", GITHUB_BRANCH],
-            capture_output=True, text=True, cwd=OUTPUT_DIR
+            ['git', 'push'],
+            cwd=OUTPUT_DIR, capture_output=True, text=True, timeout=30
         )
-        
+
         if result.returncode == 0:
-            log(f"  Push realizado com sucesso!")
-            log(f"  URL pública da base: {GITHUB_RAW_URL}")
+            log(f"Publicado no GitHub com sucesso")
+            log(f"URL pública: {GITHUB_RAW_URL}")
             return True
         else:
-            log(f"  ERRO no push: {result.stderr}")
+            log(f"AVISO: Push falhou: {result.stderr}")
             return False
-            
+
     except Exception as e:
-        log(f"  ERRO ao publicar no GitHub: {e}")
+        log(f"ERRO ao publicar no GitHub: {e}")
         return False
 
 
 def main():
-    log("=" * 50)
-    log("INICIANDO SCRAPER ANÍSIO AUTOMÓVEIS")
-    log("=" * 50)
+    """Executa o pipeline completo de atualização do estoque."""
+    log("=" * 60)
+    log("SCRAPER ANÍSIO AUTOMÓVEIS - Feed XML Integra Carros")
+    log(f"Data: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    log(f"Fonte: {FEED_URL}")
+    log("=" * 60)
 
-    driver = criar_driver()
+    # 1. Baixar feed XML
+    xml_content = fetch_xml_feed()
+    if not xml_content:
+        log("FALHA: Não foi possível baixar o feed XML")
+        exit(1)
 
-    try:
-        # 1. Coletar URLs de todos os veículos
-        urls = coletar_urls_veiculos(driver)
+    # 2. Parsear XML
+    log("Parseando feed XML...")
+    estoque_novo = parse_xml_feed(xml_content)
 
-        # 2. Extrair dados de cada veículo
-        estoque = []
-        for i, url in enumerate(urls, 1):
-            log(f"  Extraindo veículo {i}/{len(urls)}: {url.split('/')[-2]}")
-            try:
-                dados = extrair_dados_veiculo(driver, url)
-                estoque.append(dados)
-            except Exception as e:
-                log(f"  ERRO ao extrair {url}: {e}")
+    if not estoque_novo:
+        log("FALHA: Nenhum veículo encontrado no feed")
+        exit(1)
 
-        # 3. Atualizar histórico de vendidos
-        historico, novos, vendidos = atualizar_historico(estoque)
+    log(f"Total de veículos no feed: {len(estoque_novo)}")
 
-        # 4. Salvar estoque atual
-        with open(ESTOQUE_JSON, "w", encoding="utf-8") as f:
-            json.dump(estoque, f, ensure_ascii=False, indent=2)
-        log(f"Estoque salvo: {ESTOQUE_JSON}")
+    # 3. Comparar com estoque anterior (detectar vendidos/novos)
+    log("Comparando com estoque anterior...")
+    historico, ids_novos, ids_vendidos = atualizar_historico(estoque_novo)
 
-        # 5. Gerar base de conhecimento para o Omni
-        gerar_base_conhecimento(estoque)
+    # 4. Salvar estoque atual (sobrescreve o anterior)
+    # Backup antes
+    if os.path.exists(ESTOQUE_JSON):
+        shutil.copy2(ESTOQUE_JSON, ESTOQUE_JSON.replace('.json', '_backup.json'))
 
-        # 6. Gerar CSV
-        gerar_csv(estoque)
+    with open(ESTOQUE_JSON, 'w', encoding='utf-8') as f:
+        json.dump(estoque_novo, f, ensure_ascii=False, indent=2)
+    log(f"Estoque salvo: {ESTOQUE_JSON}")
 
-        # 7. Publicar no GitHub
-        publicar_no_github()
+    # 5. Gerar base de conhecimento para o Omni
+    gerar_base_conhecimento(estoque_novo)
 
-        # 8. Atualizar tabela no Omni (Opção A)
-        try:
-            from atualizar_omni import main as atualizar_omni_main
-            log("Iniciando atualização da tabela no Omni...")
-            atualizar_omni_main()
-        except ImportError:
-            log("Módulo atualizar_omni não encontrado. Pulando atualização do Omni.")
-        except Exception as e:
-            log(f"Erro ao atualizar Omni (não crítico): {e}")
-            log("A base de conhecimento no GitHub foi atualizada normalmente.")
+    # 6. Gerar CSV
+    gerar_csv(estoque_novo)
 
-        # 9. Resumo
-        log("-" * 50)
-        log("RESUMO DA EXECUÇÃO:")
-        log(f"  Veículos no estoque: {len(estoque)}")
-        log(f"  Veículos novos: {len(novos)}")
-        log(f"  Veículos vendidos (saíram): {len(vendidos)}")
-        log(f"  Total no histórico de vendidos: {len(historico)}")
-        log(f"  URL pública: {GITHUB_RAW_URL}")
-        log("-" * 50)
+    # 7. Publicar no GitHub
+    publicar_github()
 
-    except Exception as e:
-        log(f"ERRO CRÍTICO: {e}")
-        raise
-    finally:
-        driver.quit()
-        log("Driver encerrado. Scraper finalizado.")
+    # 8. Resumo final
+    log("")
+    log("=" * 60)
+    log("RESUMO DA EXECUÇÃO")
+    log(f"  Fonte: Feed XML Integra Carros")
+    log(f"  Veículos no estoque: {len(estoque_novo)}")
+    log(f"  Novos: {len(ids_novos)}")
+    log(f"  Vendidos: {len(ids_vendidos)}")
+    log(f"  Base de conhecimento: {BASE_CONHECIMENTO_TXT}")
+    log(f"  CSV: {ESTOQUE_CSV}")
+    log("=" * 60)
+
+    return estoque_novo
 
 
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    estoque = main()
+    if estoque:
+        log(f"\n[OK] Scraper concluído com sucesso: {len(estoque)} veículos")
+    else:
+        log(f"\n[FALHA] Scraper não coletou veículos")
+        exit(1)
