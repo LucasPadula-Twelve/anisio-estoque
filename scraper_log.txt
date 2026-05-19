@@ -686,3 +686,30 @@ Stacktrace:
 [2026-05-18 16:04:19] Estoque salvo: /home/ubuntu/anisio-estoque/estoque_atual.json
 [2026-05-18 16:04:19] Base de conhecimento gerada: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt (21 veículos)
 [2026-05-18 16:04:19] CSV gerado: /home/ubuntu/anisio-estoque/estoque_atual.csv
+[2026-05-18 16:04:20] Publicado no GitHub com sucesso
+[2026-05-18 16:04:20] URL pública: https://raw.githubusercontent.com/LucasPadula-Twelve/anisio-estoque/main/base_conhecimento_omni.txt
+[2026-05-18 16:04:20] 
+[2026-05-18 16:04:20] ============================================================
+[2026-05-18 16:04:20] RESUMO DA EXECUÇÃO
+[2026-05-18 16:04:20]   Fonte: Feed XML Integra Carros
+[2026-05-18 16:04:20]   Veículos no estoque: 21
+[2026-05-18 16:04:20]   Novos: 21
+[2026-05-18 16:04:20]   Vendidos: 20
+[2026-05-18 16:04:20]   Base de conhecimento: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt
+[2026-05-18 16:04:20]   CSV: /home/ubuntu/anisio-estoque/estoque_atual.csv
+[2026-05-18 16:04:20] ============================================================
+[2026-05-18 16:04:20] 
+[OK] Scraper concluído com sucesso: 21 veículos
+[2026-05-19 09:03:24] ============================================================
+[2026-05-19 09:03:24] SCRAPER ANÍSIO AUTOMÓVEIS - Feed XML Integra Carros
+[2026-05-19 09:03:24] Data: 2026-05-19 09:03:24
+[2026-05-19 09:03:24] Fonte: https://cliente.integracarros.com.br/site/24cde81a05336ba
+[2026-05-19 09:03:24] ============================================================
+[2026-05-19 09:03:24] Baixando feed XML: https://cliente.integracarros.com.br/site/24cde81a05336ba
+[2026-05-19 09:03:30] Feed baixado com sucesso: 65862 bytes
+[2026-05-19 09:03:30] Parseando feed XML...
+[2026-05-19 09:03:30] Total de veículos no feed: 21
+[2026-05-19 09:03:30] Comparando com estoque anterior...
+[2026-05-19 09:03:30] Estoque salvo: /home/ubuntu/anisio-estoque/estoque_atual.json
+[2026-05-19 09:03:30] Base de conhecimento gerada: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt (21 veículos)
+[2026-05-19 09:03:30] CSV gerado: /home/ubuntu/anisio-estoque/estoque_atual.csv
