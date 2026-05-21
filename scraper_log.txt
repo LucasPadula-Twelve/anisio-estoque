@@ -740,3 +740,17 @@ Stacktrace:
 [2026-05-21 09:01:16] Estoque salvo: /home/ubuntu/anisio-estoque/estoque_atual.json
 [2026-05-21 09:01:16] Base de conhecimento gerada: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt (21 veículos)
 [2026-05-21 09:01:16] CSV gerado: /home/ubuntu/anisio-estoque/estoque_atual.csv
+[2026-05-21 09:01:18] Publicado no GitHub com sucesso
+[2026-05-21 09:01:18] URL pública: https://raw.githubusercontent.com/LucasPadula-Twelve/anisio-estoque/main/base_conhecimento_omni.txt
+[2026-05-21 09:01:18] 
+[2026-05-21 09:01:18] ============================================================
+[2026-05-21 09:01:18] RESUMO DA EXECUÇÃO
+[2026-05-21 09:01:18]   Fonte: Feed XML Integra Carros
+[2026-05-21 09:01:18]   Veículos no estoque: 21
+[2026-05-21 09:01:18]   Novos: 0
+[2026-05-21 09:01:18]   Vendidos: 0
+[2026-05-21 09:01:18]   Base de conhecimento: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt
+[2026-05-21 09:01:18]   CSV: /home/ubuntu/anisio-estoque/estoque_atual.csv
+[2026-05-21 09:01:18] ============================================================
+[2026-05-21 09:01:18] 
+[OK] Scraper concluído com sucesso: 21 veículos
