@@ -769,3 +769,18 @@ Stacktrace:
 [2026-05-22 09:04:48] Estoque salvo: /home/ubuntu/anisio-estoque/estoque_atual.json
 [2026-05-22 09:04:48] Base de conhecimento gerada: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt (20 veículos)
 [2026-05-22 09:04:48] CSV gerado: /home/ubuntu/anisio-estoque/estoque_atual.csv
+[2026-05-22 09:04:48] AVISO: Push falhou: remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/LucasPadula-Twelve/anisio-estoque.git/'
+
+[2026-05-22 09:04:48] 
+[2026-05-22 09:04:48] ============================================================
+[2026-05-22 09:04:48] RESUMO DA EXECUÇÃO
+[2026-05-22 09:04:48]   Fonte: Feed XML Integra Carros
+[2026-05-22 09:04:48]   Veículos no estoque: 20
+[2026-05-22 09:04:48]   Novos: 1
+[2026-05-22 09:04:48]   Vendidos: 2
+[2026-05-22 09:04:48]   Base de conhecimento: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt
+[2026-05-22 09:04:48]   CSV: /home/ubuntu/anisio-estoque/estoque_atual.csv
+[2026-05-22 09:04:48] ============================================================
+[2026-05-22 09:04:48] 
+[OK] Scraper concluído com sucesso: 20 veículos
