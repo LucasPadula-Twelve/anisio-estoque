@@ -754,3 +754,18 @@ Stacktrace:
 [2026-05-21 09:01:18] ============================================================
 [2026-05-21 09:01:18] 
 [OK] Scraper concluído com sucesso: 21 veículos
+[2026-05-22 09:04:45] ============================================================
+[2026-05-22 09:04:45] SCRAPER ANÍSIO AUTOMÓVEIS - Feed XML Integra Carros
+[2026-05-22 09:04:45] Data: 2026-05-22 09:04:45
+[2026-05-22 09:04:45] Fonte: https://cliente.integracarros.com.br/site/24cde81a05336ba
+[2026-05-22 09:04:45] ============================================================
+[2026-05-22 09:04:45] Baixando feed XML: https://cliente.integracarros.com.br/site/24cde81a05336ba
+[2026-05-22 09:04:48] Feed baixado com sucesso: 61225 bytes
+[2026-05-22 09:04:48] Parseando feed XML...
+[2026-05-22 09:04:48] Total de veículos no feed: 20
+[2026-05-22 09:04:48] Comparando com estoque anterior...
+[2026-05-22 09:04:48]   1 veículo(s) NOVO(S) no estoque.
+[2026-05-22 09:04:48]   2 veículo(s) marcado(s) como VENDIDO(S).
+[2026-05-22 09:04:48] Estoque salvo: /home/ubuntu/anisio-estoque/estoque_atual.json
+[2026-05-22 09:04:48] Base de conhecimento gerada: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt (20 veículos)
+[2026-05-22 09:04:48] CSV gerado: /home/ubuntu/anisio-estoque/estoque_atual.csv

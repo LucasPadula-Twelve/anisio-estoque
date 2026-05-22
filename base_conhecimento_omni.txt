@@ -1,7 +1,7 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 21/05/2026 às 09:01
-Total de veículos disponíveis: 21
+Atualizado em: 22/05/2026 às 09:04
+Total de veículos disponíveis: 20
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
 ============================================================
@@ -67,21 +67,6 @@ Descrição: (IPVA 2026 PAGO TOTAL), MARAVILHOSO, SÓ 9.000 Km, todo original, s
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento, Trava Elétricas
 
 --- VEÍCULO 5 ---
-Nome: Jeep Compass
-Marca: Jeep
-Versão: 2.0 16V 4P FLEX SPORT AUTOMÁTICO
-Preço: R$ 91.990,00
-Ano/Modelo: 2019/2020
-Câmbio: Automático
-Combustível: Flex
-Cor: Cinza
-Portas: 4
-Quilometragem: 87000
-Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/130981.52cd7a23ce9913a.jpg
-Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, manual com todas revisões na concessionária, chave cópia, interior perfeito, MIDIA e rodas originais, pneus novos, estepe sem uso. (Carro MUITO CONSERVADO MESM0, SEM DETALHES, TODO ORIGINAL).
-Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos, Revisado Concessionária
-
---- VEÍCULO 6 ---
 Nome: Honda Fit
 Marca: Honda
 Versão: 1.5 16V 4P LX FLEX
@@ -96,7 +81,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/132929.6ad68d
 Descrição: IMPECÁVEL, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, SOM e rodas originais, 4 pneus novos, estepe sem uso. (Carro MUITO CONSERVADO MESMO, SEM DETALHES). FERNENDO CLAUDIO
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Direção Hidráulica, Freios ABS, Insul Film, Limpador Traseiro, Retrovisores Elétricos, Rodas de Liga Leves, Trava Elétricas, Vidros Elétricos, Vidros Verdes
 
---- VEÍCULO 7 ---
+--- VEÍCULO 6 ---
 Nome: Jeep Renegade
 Marca: Jeep
 Versão: 2.0 16V 4P TURBO DIESEL LIMITED 4X4 AUTOMÁTICO
@@ -110,7 +95,7 @@ Quilometragem: 103000
 Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/133330.f852f0f5460b57c.jpg
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisores Elétricos, Sensor de Estacionamento, Tração 4x4
 
---- VEÍCULO 8 ---
+--- VEÍCULO 7 ---
 Nome: Fiat Toro
 Marca: Fiat
 Versão: 1.3 16V 4P FLEX 270 TURBO FREEDOM AUTOMÁTICO
@@ -125,7 +110,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/134881.784f5c
 Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, MIDIA e rodas originais, pneus novos. (Carro MUITO CONSERVADO, TODO ORIGINAL).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Lona Marítima, Multimídia, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento, Trava Elétricas
 
---- VEÍCULO 9 ---
+--- VEÍCULO 8 ---
 Nome: Toyota Corolla Cross
 Marca: Toyota
 Versão: 1.8 16V 4P FLEX VVT-I HYBRID XRX AUTOMÁTICO CVT
@@ -140,7 +125,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/135190.28631f
 Descrição: NIVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade com todas revisões feitas em Piracicaba (Sem pular nenhuma) e com GARANTIA de FABRICA até janeiro 2032 (10 anos), chave cópia, interior em couro perfeito, TETO SOLAR , MIDIA e rodas aro 18 
 Opcionais: 4 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Garantia de Fábrica, GPS, Limpador Traseiro, Multimídia, Retrovisor Fotocromático
 
---- VEÍCULO 10 ---
+--- VEÍCULO 9 ---
 Nome: Audi Q3
 Marca: Audi
 Versão: 1.4 4P 35 TFSI PRESTIGE PLUS S-TRONIC AUTOMÁTICO
@@ -155,7 +140,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/135191.373396
 Descrição: MARAVILHOSA, toda original, sem detalhes na pintura, LAUDO APROVADO SE RESTRIÇÕES, manual com todas revisões na concessionária (sem pular nenhuma), chave cópia sem uso, TETO SOLAR, MIDIA e rodas aro 18 originais, pneus novos, estepe sem uso. (Carro MUITO CONSERVADO MESMO, TODO REVISADO e com TETO SO
 Opcionais: 4 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático
 
---- VEÍCULO 11 ---
+--- VEÍCULO 10 ---
 Nome: Fiat Fiorino Furgão
 Marca: Fiat
 Versão: 1.4 FLEX ENDURANCE
@@ -170,7 +155,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/135282.d94308
 Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, pneus novos, interior do furgão em ótimo estado. (Carro MUITO CONSERVADO, SEM DETALHES).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Câmbio Manual, CD Player, Direção Hidráulica, Freios ABS, Insul Film, Trava Elétricas, Vidros Elétricos, Vidros Verdes
 
---- VEÍCULO 12 ---
+--- VEÍCULO 11 ---
 Nome: Volkswagen Jetta
 Marca: Volkswagen
 Versão: 1.4 16V 4P TSI COMFORTLINE AUTOMÁTICO
@@ -185,7 +170,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/135491.748d3f
 Descrição: MARAVILHOSO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, manual com todas revisões na concessionária (SEM PULAR NENHUMA), chave cópia, TETO SOLAR e MIDIA originais, rodas aro 18 e 4 pneus ZERO, estepe sem uso. (Carro MUITO CONSERVADO MESMO, NÃO TEM DETALHES).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Freios ABS, GPS, Insul Film, Multimídia, Retrovisores Elétricos, Revisado Concessionária, Sensor de Estacionamento, Teto Solar, Trava Elétricas
 
---- VEÍCULO 13 ---
+--- VEÍCULO 12 ---
 Nome: Fiat Toro
 Marca: Fiat
 Versão: 1.3 16V 4P FLEX 270 TURBO FREEDOM AUTOMÁTICO
@@ -200,7 +185,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/135779.3acf80
 Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, MIDIA e rodas originais, pneus novos, estepe sem uso. (Carro MUITO NOVO, SEM DETALHES).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Insul Film, Lona Marítima, Multimídia, Retrovisores Elétricos, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos
 
---- VEÍCULO 14 ---
+--- VEÍCULO 13 ---
 Nome: Hyundai Creta
 Marca: Hyundai
 Versão: 1.6 16V 4P FLEX ACTION AUTOMÁTICO
@@ -215,7 +200,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/135782.b547c7
 Descrição: MARAVILHOSA, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, SOM e rodas originais, pneus novos, estepe sem uso. (Carro MUITO NOVO MESMO, TODO ORIGINAL).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Neblina, Freios ABS, Insul Film, Limpador Traseiro, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos, Vidros Verdes
 
---- VEÍCULO 15 ---
+--- VEÍCULO 14 ---
 Nome: Nissan Kicks
 Marca: Nissan
 Versão: 1.6 16V 4P FLEXSTART SENSE XTRONIC AUTOMÁTICO CVT
@@ -230,7 +215,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/136846.0f751b
 Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, MIDIA e rodas originais, pneus novos, estepe sem uso. (Carro SUPER NOVO, SÓ 31.000 Km RODADOS).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Freios ABS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Rodas de Liga Leves, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos
 
---- VEÍCULO 16 ---
+--- VEÍCULO 15 ---
 Nome: Jeep Renegade
 Marca: Jeep
 Versão: 1.3 16V 4P FLEX T270 LONGITUDE TURBO AUTOMÁTICO
@@ -245,7 +230,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/136847.57617c
 Descrição: MARAVILHOSO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior em couro impecável, MIDIA e rodas aro 18 originais, pneus novos, estepe sem uso. (Carro MUITO NOVO MESMO, NUNCA BATEU, SÓ 28.000 Km RODADOS).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Farol de Xenon, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia
 
---- VEÍCULO 17 ---
+--- VEÍCULO 16 ---
 Nome: Chevrolet Onix Sedan
 Marca: Chevrolet
 Versão: 1.0 12V 4P FLEX LT PLUS
@@ -260,7 +245,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/136931.ec683a
 Descrição: IMPECÁVEL, todo original, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual com revisão na concessionária e GARANTIA de FABRICA p/ 10 anos na correia de óleo, chave cópia, interior perfeito, MIDIA original, pneus novos, estepe sem uso. (Carro MUITO BONITO MESMO).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Multimídia, Revisado Concessionária, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos, Vidros Verdes
 
---- VEÍCULO 18 ---
+--- VEÍCULO 17 ---
 Nome: Volkswagen Saveiro
 Marca: Volkswagen
 Versão: 1.6 16V FLEX MSI ROBUST CABINE SIMPLES
@@ -275,7 +260,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/136933.ebbaa8
 Descrição: IMPECÁVEL, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, pneus novos estepe sem uso, (Carro MUITO NOVO, só 36.000 Km RODADOS)
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player, Direção Hidráulica, Freios ABS, Trava Elétricas, Vidros Elétricos, Vidros Verdes
 
---- VEÍCULO 19 ---
+--- VEÍCULO 18 ---
 Nome: Volkswagen Polo Hatch
 Marca: Volkswagen
 Versão: 1.0 12V 4P MPI TRACK 1st EDITION
@@ -290,7 +275,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/136962.c8466c
 Descrição: MARAVILHOSO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA original, 4 pneus ZERO, estepe sem uso. (Carro MUITO NOVO MESMO, TODO ORIGINAL).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos
 
---- VEÍCULO 20 ---
+--- VEÍCULO 19 ---
 Nome: Volkswagen T-Cross
 Marca: Volkswagen
 Versão: 1.0 4P 200 TSI FLEX AUTOMÁTICO
@@ -305,17 +290,16 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/137135.e7e4f6
 Descrição: NOVÍSSIMO, todo original, sem retoques na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA e rodas aro 17 originais, pneus novos. (Carro MUITO NOVO MESMO, NUNCA BATEU).
 Opcionais: 2 Air Bags, Alarme Original, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Estepe sem Uso, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Rodas de Liga Leves, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos, Vidros Verdes, Volante com Regulagem de Altura
 
---- VEÍCULO 21 ---
-Nome: Hyundai HB 20 Sedan
-Marca: Hyundai
-Versão: 1.0 12V 4P FLEX TGDI TURBO DIAMOND PLUS AUTOMÁTICO
-Preço: R$ 74.990,00
-Ano/Modelo: 2019/2020
+--- VEÍCULO 20 ---
+Nome: Volkswagen Amarok
+Marca: Volkswagen
+Versão: 2.0 16V 4X4 CABINE DUPLA COMFORTLINE TURBO INTERCOOLER AUTOMÁTICO
+Preço: R$ 114.990,00
+Ano/Modelo: 2017/2017
 Câmbio: Automático
-Combustível: Flex
-Cor: Bege
+Combustível: Diesel
+Cor: Prata
 Portas: 4
 Quilometragem: 107000
-Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/137137.c25e43c7ac7f234.jpg
-Descrição: IMPECÁVEL, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro tirado zero na cidade (NUNCA FOI DE LOCADORA), manual com todas revisões em Piracicaba (NÃO PULOU NENHUMA), chave cópia, interior perfeito, MIDIA e rodas originais, pneus zero, estepe sem uso. (Carro MUITO CONSER
-Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento
+Descrição: MARAVILHOSA, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior em couro impecável, SOM e rodas originais, lona marítima, estepe sem uso. (Carro MUITO CONSERVADO MESMO, NOTA 10 , SÓ 107.000 Km RODADOS).
+Opcionais: 2 Air Bags, Alarme Original, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Insul Film, Lona Marítima, Retrovisores Elétricos, Rodas de Liga Leves, Tração 4x4, Trava Elétricas
