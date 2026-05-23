@@ -1,6 +1,6 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 22/05/2026 às 09:04
+Atualizado em: 23/05/2026 às 09:04
 Total de veículos disponíveis: 20
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
@@ -301,5 +301,6 @@ Combustível: Diesel
 Cor: Prata
 Portas: 4
 Quilometragem: 107000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/137471.e1ea3e37c774d33.jpeg
 Descrição: MARAVILHOSA, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior em couro impecável, SOM e rodas originais, lona marítima, estepe sem uso. (Carro MUITO CONSERVADO MESMO, NOTA 10 , SÓ 107.000 Km RODADOS).
 Opcionais: 2 Air Bags, Alarme Original, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Insul Film, Lona Marítima, Retrovisores Elétricos, Rodas de Liga Leves, Tração 4x4, Trava Elétricas
