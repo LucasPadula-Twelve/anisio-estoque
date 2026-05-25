@@ -1,6 +1,6 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 24/05/2026 às 09:02
+Atualizado em: 25/05/2026 às 09:05
 Total de veículos disponíveis: 20
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
@@ -293,7 +293,7 @@ Opcionais: 2 Air Bags, Alarme Original, Áudio - Sistema de Som, Banco Motorista
 --- VEÍCULO 20 ---
 Nome: Volkswagen Amarok
 Marca: Volkswagen
-Versão: 2.0 16V 4X4 CABINE DUPLA COMFORTLINE TURBO INTERCOOLER AUTOMÁTICO
+Versão: 2.0 16V 4X4 CABINE DUPLA TRENDLINE TURBO INTERCOOLER AUTOMÁTICO
 Preço: R$ 114.990,00
 Ano/Modelo: 2017/2017
 Câmbio: Automático
@@ -301,6 +301,6 @@ Combustível: Diesel
 Cor: Prata
 Portas: 4
 Quilometragem: 107000
-Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/137471.e1ea3e37c774d33.jpeg
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/137765.58d9ba6104b4c74.jpeg
 Descrição: MARAVILHOSA, toda original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior em couro impecável, SOM e rodas originais, lona marítima, estepe sem uso. (Carro MUITO CONSERVADO MESMO, NOTA 10 , SÓ 107.000 Km RODADOS).
-Opcionais: 2 Air Bags, Alarme Original, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Insul Film, Lona Marítima, Retrovisores Elétricos, Rodas de Liga Leves, Tração 4x4, Trava Elétricas
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Ar Quente, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, Capota de Lona, Computador de Bordo, Controle de Som no Volante, Desembaçador Traseiro, Direção Elétrica, Estribo, Licenciado, Lona Marítima, Multimídia, Parachoque na Cor do Veículo, Rodas de Liga Leves, Turbo Intercooler, Vidros Elétricos
