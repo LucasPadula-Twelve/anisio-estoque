@@ -1,7 +1,7 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 29/05/2026 às 09:06
-Total de veículos disponíveis: 19
+Atualizado em: 30/05/2026 às 09:02
+Total de veículos disponíveis: 20
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
 ============================================================
@@ -289,3 +289,17 @@ Quilometragem: 107000
 Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/138136.dba917ad06640e9.jpeg
 Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro sempre da cidade, manual, chave cópia, interior perfeito, TETO SOLAR (TETO PANORAMICO) e MIDIA originais, rodas e pneus novos. (Carro MUITO CONSERVADO MESMO, e com TETO SOLAR ORIGINAL)
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento, Teto Solar
+
+--- VEÍCULO 20 ---
+Nome: Fiat Argo
+Marca: Fiat
+Versão: 1.3 4P FIREFLY FLEX TREKKING
+Preço: R$ 71.990,00
+Ano/Modelo: 2020/2020
+Câmbio: Manual
+Combustível: Flex
+Cor: Branco
+Portas: 4
+Quilometragem: 32000
+Descrição: RARIDADE, SÓ 32.000 Km, sem detalhes na pintura, nunca bateu, todo original, LAUDO APROVADO SEM RESTRIÇÕES, carro sempre da cidade, nunca foi de locadora, manual com revisões em Piracicaba, chave cópia, interior impecável, MIDIA original, pneus novos, estepe sem uso. (Carro MUITO CONSERVADO MESMO, S
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Insul Film, Limpador Traseiro, Multimídia, Trava Elétricas, Vidros Elétricos, Vidros Verdes
