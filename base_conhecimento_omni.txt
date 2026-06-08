@@ -1,7 +1,7 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 08/06/2026 às 06:30
-Total de veículos disponíveis: 15
+Atualizado em: 08/06/2026 às 09:03
+Total de veículos disponíveis: 16
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
 ============================================================
@@ -229,3 +229,18 @@ Quilometragem: 32000
 Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/138292.91dcc36a2f87fe3.jpeg
 Descrição: RARIDADE, SÓ 32.000 Km, sem detalhes na pintura, nunca bateu, todo original, LAUDO APROVADO SEM RESTRIÇÕES, carro sempre da cidade, nunca foi de locadora, manual com revisões em Piracicaba, chave cópia, interior impecável, MIDIA original, pneus novos, estepe sem uso. (Carro MUITO CONSERVADO MESMO, S
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Insul Film, Limpador Traseiro, Multimídia, Trava Elétricas, Vidros Elétricos, Vidros Verdes
+
+--- VEÍCULO 16 ---
+Nome: Volkswagen T-Cross
+Marca: Volkswagen
+Versão: 1.4 4P 250 TSI FLEX HIGHLINE AUTOMÁTICO
+Preço: R$ 99.990,00
+Ano/Modelo: 2019/2020
+Câmbio: Automático
+Combustível: Flex
+Cor: Prata
+Portas: 4
+Quilometragem: 87000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/138786.60e6bda161e0245.jpeg
+Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual revisado em Piracicaba, chave cópia, interior em couro perfeito, MIDIA e rodas 17 originais, pneus novos, estepe sem uso. (Carro MUITO CONSERVADO MESMO, SÓ 87.000 Km RODADOS , E NUNCA FOI DE LOC
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento
