@@ -1,7 +1,7 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 08/06/2026 às 09:03
-Total de veículos disponíveis: 16
+Atualizado em: 09/06/2026 às 09:02
+Total de veículos disponíveis: 17
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
 ============================================================
@@ -244,3 +244,18 @@ Quilometragem: 87000
 Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/138786.60e6bda161e0245.jpeg
 Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual revisado em Piracicaba, chave cópia, interior em couro perfeito, MIDIA e rodas 17 originais, pneus novos, estepe sem uso. (Carro MUITO CONSERVADO MESMO, SÓ 87.000 Km RODADOS , E NUNCA FOI DE LOC
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento
+
+--- VEÍCULO 17 ---
+Nome: Volkswagen Nivus
+Marca: Volkswagen
+Versão: 1.0 4P FLEX 200 TSI HIGHLINE AUTOMÁTICO
+Preço: R$ 107.990,00
+Ano/Modelo: 2022/2023
+Câmbio: Automático
+Combustível: Flex
+Cor: Vinho
+Portas: 4
+Quilometragem: 72000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/138947.0c6a2e26fc3a931.jpeg
+Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, manual com todas revisões na concessionária, chave cópia, interior em couro impecável, MIDIA e rodas aro 17 originais, 4 pneus novos, estepe sem uso. (Carro MUITO NOVO MESMO, NUNCA FOI DE LOCADORA).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco com Regulagem Lombar, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Neblina, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos
