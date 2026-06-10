@@ -1,7 +1,7 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 09/06/2026 às 09:02
-Total de veículos disponíveis: 17
+Atualizado em: 10/06/2026 às 09:03
+Total de veículos disponíveis: 18
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
 ============================================================
@@ -259,3 +259,17 @@ Quilometragem: 72000
 Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/138947.0c6a2e26fc3a931.jpeg
 Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, manual com todas revisões na concessionária, chave cópia, interior em couro impecável, MIDIA e rodas aro 17 originais, 4 pneus novos, estepe sem uso. (Carro MUITO NOVO MESMO, NUNCA FOI DE LOCADORA).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco com Regulagem Lombar, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Neblina, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos
+
+--- VEÍCULO 18 ---
+Nome: Citroen C3 Aircross
+Marca: Citroen
+Versão: 1.0 12V 4P FLEX FEEL TURBO 200 AUTOMÁTICO CVT
+Preço: R$ 91.990,00
+Ano/Modelo: 2024/2024
+Câmbio: Automático
+Combustível: Flex
+Cor: Branco
+Portas: 4
+Quilometragem: 30000
+Descrição: (5 LUGARES), NOVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade e 1º dono, manual com todas revisões em Piracicaba e GARNTIA de FABRICA até Maio 2027, chave cópia, interior impecável, MIDIA e rodas originais, pneus novos, estepe sem uso. (C
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco com Regulagem Lombar, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Garantia de Fábrica, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático
