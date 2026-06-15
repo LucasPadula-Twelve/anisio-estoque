@@ -1402,3 +1402,31 @@ fatal: Authentication failed for 'https://github.com/LucasPadula-Twelve/anisio-e
 [2026-06-14 09:06:31] Estoque salvo: /home/ubuntu/anisio-estoque/estoque_atual.json
 [2026-06-14 09:06:31] Base de conhecimento gerada: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt (18 veículos)
 [2026-06-14 09:06:31] CSV gerado: /home/ubuntu/anisio-estoque/estoque_atual.csv
+[2026-06-14 09:06:32] AVISO: Push falhou: remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/LucasPadula-Twelve/anisio-estoque.git/'
+
+[2026-06-14 09:06:32] 
+[2026-06-14 09:06:32] ============================================================
+[2026-06-14 09:06:32] RESUMO DA EXECUÇÃO
+[2026-06-14 09:06:32]   Fonte: Feed XML Integra Carros
+[2026-06-14 09:06:32]   Veículos no estoque: 18
+[2026-06-14 09:06:32]   Novos: 0
+[2026-06-14 09:06:32]   Vendidos: 0
+[2026-06-14 09:06:32]   Base de conhecimento: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt
+[2026-06-14 09:06:32]   CSV: /home/ubuntu/anisio-estoque/estoque_atual.csv
+[2026-06-14 09:06:32] ============================================================
+[2026-06-14 09:06:32] 
+[OK] Scraper concluído com sucesso: 18 veículos
+[2026-06-15 09:05:50] ============================================================
+[2026-06-15 09:05:50] SCRAPER ANÍSIO AUTOMÓVEIS - Feed XML Integra Carros
+[2026-06-15 09:05:50] Data: 2026-06-15 09:05:50
+[2026-06-15 09:05:50] Fonte: https://cliente.integracarros.com.br/site/24cde81a05336ba
+[2026-06-15 09:05:50] ============================================================
+[2026-06-15 09:05:50] Baixando feed XML: https://cliente.integracarros.com.br/site/24cde81a05336ba
+[2026-06-15 09:05:57] Feed baixado com sucesso: 57410 bytes
+[2026-06-15 09:05:57] Parseando feed XML...
+[2026-06-15 09:05:57] Total de veículos no feed: 18
+[2026-06-15 09:05:57] Comparando com estoque anterior...
+[2026-06-15 09:05:57] Estoque salvo: /home/ubuntu/anisio-estoque/estoque_atual.json
+[2026-06-15 09:05:57] Base de conhecimento gerada: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt (18 veículos)
+[2026-06-15 09:05:57] CSV gerado: /home/ubuntu/anisio-estoque/estoque_atual.csv
