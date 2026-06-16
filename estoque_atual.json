@@ -2,7 +2,7 @@
   {
     "id": "130687",
     "url": "https://www.anisioautomoveis.com.br/veiculo/130687-chevrolet-montana",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Chevrolet Montana 1.2 12V FLEX LT TURBO 2023/2024 Flex Preto 4P 49000 km",
     "nome": "Chevrolet Montana",
     "preco": "R$ 104.990,00",
@@ -60,10 +60,10 @@
   {
     "id": "130978",
     "url": "https://www.anisioautomoveis.com.br/veiculo/130978-volkswagen-virtus",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Volkswagen Virtus 1.0 4P 170 TSI AUTOMÁTICO 2024/2025 Flex Preto 4P 48000 km",
     "nome": "Volkswagen Virtus",
-    "preco": "R$ 104.990,00",
+    "preco": "R$ 101.990,00",
     "ficha_tecnica": {
       "ano_modelo": "2024/2025",
       "combustivel": "Flex",
@@ -114,18 +114,18 @@
       "https://cliente.integracarros.com.br/imagens/veiculos/public/130978.f2455d0297a7993.jpg"
     ],
     "submodelo": "1.0 4P 170 TSI AUTOMÁTICO",
-    "valor_numerico": "104990.00",
+    "valor_numerico": "101990.00",
     "tipo": "AUTOMOVEIS",
     "data_cadastro": "2026-02-23 09:42:08",
-    "data_modificacao": "2026-02-23 10:47:44"
+    "data_modificacao": "2026-06-15 10:30:25"
   },
   {
     "id": "130979",
     "url": "https://www.anisioautomoveis.com.br/veiculo/130979-volkswagen-virtus",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Volkswagen Virtus 1.0 4P 170 TSI 2024/2024 Flex Branco 4P 9000 km",
     "nome": "Volkswagen Virtus",
-    "preco": "R$ 94.990,00",
+    "preco": "R$ 91.990,00",
     "ficha_tecnica": {
       "ano_modelo": "2024/2024",
       "combustivel": "Flex",
@@ -175,18 +175,18 @@
       "https://cliente.integracarros.com.br/imagens/veiculos/public/130979.e822f97018536b4.jpg"
     ],
     "submodelo": "1.0 4P 170 TSI",
-    "valor_numerico": "94990.00",
+    "valor_numerico": "91990.00",
     "tipo": "AUTOMOVEIS",
     "data_cadastro": "2026-02-23 09:49:40",
-    "data_modificacao": "2026-03-09 09:22:59"
+    "data_modificacao": "2026-06-15 10:30:44"
   },
   {
     "id": "132929",
     "url": "https://www.anisioautomoveis.com.br/veiculo/132929-honda-fit",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Honda Fit 1.5 16V 4P LX FLEX 2015/2015 Flex Cinza 4P 136000 km",
     "nome": "Honda Fit",
-    "preco": "R$ 61.990,00",
+    "preco": "R$ 59.990,00",
     "ficha_tecnica": {
       "ano_modelo": "2015/2015",
       "combustivel": "Flex",
@@ -228,15 +228,15 @@
       "https://cliente.integracarros.com.br/imagens/veiculos/public/132929.3d169817873d762.jpg"
     ],
     "submodelo": "1.5 16V 4P LX FLEX",
-    "valor_numerico": "61990.00",
+    "valor_numerico": "59990.00",
     "tipo": "AUTOMOVEIS",
     "data_cadastro": "2026-03-20 15:15:18",
-    "data_modificacao": "2026-03-23 08:57:16"
+    "data_modificacao": "2026-06-15 10:29:04"
   },
   {
     "id": "133330",
     "url": "https://www.anisioautomoveis.com.br/veiculo/133330-jeep-renegade",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Jeep Renegade 2.0 16V 4P TURBO DIESEL LIMITED 4X4 AUTOMÁTICO 2018/2018 Diesel Branco 4P 103000 km",
     "nome": "Jeep Renegade",
     "preco": "R$ 89.990,00",
@@ -299,10 +299,10 @@
   {
     "id": "134881",
     "url": "https://www.anisioautomoveis.com.br/veiculo/134881-fiat-toro",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Fiat Toro 1.3 16V 4P FLEX 270 TURBO FREEDOM AUTOMÁTICO 2024/2024 Flex Branco 4P 54000 km",
     "nome": "Fiat Toro",
-    "preco": "R$ 124.990,00",
+    "preco": "R$ 121.990,00",
     "ficha_tecnica": {
       "ano_modelo": "2024/2024",
       "combustivel": "Flex",
@@ -352,15 +352,15 @@
       "https://cliente.integracarros.com.br/imagens/veiculos/public/134881.84a93070500c5fa.jpg"
     ],
     "submodelo": "1.3 16V 4P FLEX 270 TURBO FREEDOM AUTOMÁTICO",
-    "valor_numerico": "124990.00",
+    "valor_numerico": "121990.00",
     "tipo": "AUTOMOVEIS",
     "data_cadastro": "2026-04-16 09:05:20",
-    "data_modificacao": "2026-04-16 10:48:24"
+    "data_modificacao": "2026-06-15 13:00:31"
   },
   {
     "id": "135191",
     "url": "https://www.anisioautomoveis.com.br/veiculo/135191-audi-q3",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Audi Q3 1.4 4P 35 TFSI PRESTIGE PLUS S-TRONIC AUTOMÁTICO 2018/2019 Flex Prata 4P 97000 km",
     "nome": "Audi Q3",
     "preco": "R$ 117.990,00",
@@ -426,10 +426,10 @@
   {
     "id": "135779",
     "url": "https://www.anisioautomoveis.com.br/veiculo/135779-fiat-toro",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Fiat Toro 1.3 16V 4P FLEX 270 TURBO FREEDOM AUTOMÁTICO 2022/2023 Flex Cinza 4P 64000 km",
     "nome": "Fiat Toro",
-    "preco": "R$ 114.990,00",
+    "preco": "R$ 111.990,00",
     "ficha_tecnica": {
       "ano_modelo": "2022/2023",
       "combustivel": "Flex",
@@ -478,18 +478,18 @@
       "https://cliente.integracarros.com.br/imagens/veiculos/public/135779.42b6146a046ea9b.jpg"
     ],
     "submodelo": "1.3 16V 4P FLEX 270 TURBO FREEDOM AUTOMÁTICO",
-    "valor_numerico": "114990.00",
+    "valor_numerico": "111990.00",
     "tipo": "AUTOMOVEIS",
     "data_cadastro": "2026-04-30 08:57:23",
-    "data_modificacao": "2026-04-30 13:49:25"
+    "data_modificacao": "2026-06-15 10:26:29"
   },
   {
     "id": "135782",
     "url": "https://www.anisioautomoveis.com.br/veiculo/135782-hyundai-creta",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Hyundai Creta 1.6 16V 4P FLEX ACTION AUTOMÁTICO 2024/2024 Flex Preto 4P 52000 km",
     "nome": "Hyundai Creta",
-    "preco": "R$ 104.990,00",
+    "preco": "R$ 101.990,00",
     "ficha_tecnica": {
       "ano_modelo": "2024/2024",
       "combustivel": "Flex",
@@ -537,18 +537,18 @@
       "https://cliente.integracarros.com.br/imagens/veiculos/public/135782.7e1bec1208866e6.jpg"
     ],
     "submodelo": "1.6 16V 4P FLEX ACTION AUTOMÁTICO",
-    "valor_numerico": "104990.00",
+    "valor_numerico": "101990.00",
     "tipo": "AUTOMOVEIS",
     "data_cadastro": "2026-04-30 09:16:23",
-    "data_modificacao": "2026-04-30 13:48:17"
+    "data_modificacao": "2026-06-15 10:31:22"
   },
   {
     "id": "136846",
     "url": "https://www.anisioautomoveis.com.br/veiculo/136846-nissan-kicks",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Nissan Kicks 1.6 16V 4P FLEXSTART SENSE XTRONIC AUTOMÁTICO CVT 2024/2024 Flex Preto 4P 31000 km",
     "nome": "Nissan Kicks",
-    "preco": "R$ 101.990,00",
+    "preco": "R$ 99.990,00",
     "ficha_tecnica": {
       "ano_modelo": "2024/2024",
       "combustivel": "Flex",
@@ -597,18 +597,18 @@
       "https://cliente.integracarros.com.br/imagens/veiculos/public/136846.d5420cf2c0758a5.jpg"
     ],
     "submodelo": "1.6 16V 4P FLEXSTART SENSE XTRONIC AUTOMÁTICO CVT",
-    "valor_numerico": "101990.00",
+    "valor_numerico": "99990.00",
     "tipo": "AUTOMOVEIS",
     "data_cadastro": "2026-05-13 14:44:10",
-    "data_modificacao": "2026-05-13 15:03:52"
+    "data_modificacao": "2026-06-15 10:28:33"
   },
   {
     "id": "136931",
     "url": "https://www.anisioautomoveis.com.br/veiculo/136931-chevrolet-onix-sedan",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Chevrolet Onix Sedan 1.0 12V 4P FLEX LT PLUS 2024/2025 Flex Preto 4P 55000 km",
     "nome": "Chevrolet Onix Sedan",
-    "preco": "R$ 71.990,00",
+    "preco": "R$ 69.990,00",
     "ficha_tecnica": {
       "ano_modelo": "2024/2025",
       "combustivel": "Flex",
@@ -657,15 +657,15 @@
       "https://cliente.integracarros.com.br/imagens/veiculos/public/136931.cf37a19f8fb642b.jpg"
     ],
     "submodelo": "1.0 12V 4P FLEX LT PLUS",
-    "valor_numerico": "71990.00",
+    "valor_numerico": "69990.00",
     "tipo": "AUTOMOVEIS",
     "data_cadastro": "2026-05-14 10:21:11",
-    "data_modificacao": "2026-05-14 10:29:59"
+    "data_modificacao": "2026-06-15 10:27:01"
   },
   {
     "id": "137135",
     "url": "https://www.anisioautomoveis.com.br/veiculo/137135-volkswagen-t-cross",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Volkswagen T-Cross 1.0 4P 200 TSI FLEX AUTOMÁTICO 2024/2025 Flex Prata 4P 45000 km",
     "nome": "Volkswagen T-Cross",
     "preco": "R$ 117.990,00",
@@ -723,7 +723,7 @@
   {
     "id": "137765",
     "url": "https://www.anisioautomoveis.com.br/veiculo/137765-volkswagen-amarok",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Volkswagen Amarok 2.0 16V 4X4 CABINE DUPLA TRENDLINE TURBO INTERCOOLER AUTOMÁTICO 2017/2017 Diesel Prata 4P 107000 km",
     "nome": "Volkswagen Amarok",
     "preco": "R$ 114.990,00",
@@ -782,10 +782,10 @@
   {
     "id": "138136",
     "url": "https://www.anisioautomoveis.com.br/veiculo/138136-jeep-renegade",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Jeep Renegade 1.8 16V 4P FLEX SPORT AUTOMÁTICO 2015/2016 Flex Prata 4P 107000 km",
     "nome": "Jeep Renegade",
-    "preco": "R$ 69.990,00",
+    "preco": "R$ 67.990,00",
     "ficha_tecnica": {
       "ano_modelo": "2015/2016",
       "combustivel": "Flex",
@@ -836,15 +836,15 @@
       "https://cliente.integracarros.com.br/imagens/veiculos/public/138136.5806d93f05dd735.jpeg"
     ],
     "submodelo": "1.8 16V 4P FLEX SPORT AUTOMÁTICO",
-    "valor_numerico": "69990.00",
+    "valor_numerico": "67990.00",
     "tipo": "AUTOMOVEIS",
     "data_cadastro": "2026-05-28 16:03:26",
-    "data_modificacao": "2026-05-28 16:10:16"
+    "data_modificacao": "2026-06-15 10:31:55"
   },
   {
     "id": "138292",
     "url": "https://www.anisioautomoveis.com.br/veiculo/138292-fiat-argo",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Fiat Argo 1.3 4P FIREFLY FLEX TREKKING 2020/2020 Flex Branco 4P 32000 km",
     "nome": "Fiat Argo",
     "preco": "R$ 71.990,00",
@@ -900,10 +900,10 @@
   {
     "id": "138786",
     "url": "https://www.anisioautomoveis.com.br/veiculo/138786-volkswagen-t-cross",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Volkswagen T-Cross 1.4 4P 250 TSI FLEX HIGHLINE AUTOMÁTICO 2019/2020 Flex Prata 4P 87000 km",
     "nome": "Volkswagen T-Cross",
-    "preco": "R$ 99.990,00",
+    "preco": "R$ 97.990,00",
     "ficha_tecnica": {
       "ano_modelo": "2019/2020",
       "combustivel": "Flex",
@@ -954,15 +954,15 @@
       "https://cliente.integracarros.com.br/imagens/veiculos/public/138786.4048765f3603a06.jpeg"
     ],
     "submodelo": "1.4 4P 250 TSI FLEX HIGHLINE AUTOMÁTICO",
-    "valor_numerico": "99990.00",
+    "valor_numerico": "97990.00",
     "tipo": "AUTOMOVEIS",
     "data_cadastro": "2026-06-08 09:26:54",
-    "data_modificacao": "2026-06-08 09:45:13"
+    "data_modificacao": "2026-06-15 10:29:51"
   },
   {
     "id": "138947",
     "url": "https://www.anisioautomoveis.com.br/veiculo/138947-volkswagen-nivus",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Volkswagen Nivus 1.0 4P FLEX 200 TSI HIGHLINE AUTOMÁTICO 2022/2023 Flex Vinho 4P 72000 km",
     "nome": "Volkswagen Nivus",
     "preco": "R$ 107.990,00",
@@ -1026,7 +1026,7 @@
   {
     "id": "139114",
     "url": "https://www.anisioautomoveis.com.br/veiculo/139114-citroen-c3-aircross",
-    "data_coleta": "2026-06-15 09:05:57",
+    "data_coleta": "2026-06-16 09:02:12",
     "titulo_pagina": "Citroen C3 Aircross 1.0 12V 4P FLEX FEEL TURBO 200 AUTOMÁTICO CVT 2024/2024 Flex Branco 4P 30000 km",
     "nome": "Citroen C3 Aircross",
     "preco": "R$ 91.990,00",
