@@ -1,7 +1,7 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 17/06/2026 às 09:03
-Total de veículos disponíveis: 18
+Atualizado em: 18/06/2026 às 09:03
+Total de veículos disponíveis: 20
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
 ============================================================
@@ -189,7 +189,7 @@ Opcionais: 2 Air Bags, Alarme Original, Áudio - Sistema de Som, Banco Motorista
 Nome: Volkswagen Amarok
 Marca: Volkswagen
 Versão: 2.0 16V 4X4 CABINE DUPLA TRENDLINE TURBO INTERCOOLER AUTOMÁTICO
-Preço: R$ 114.990,00
+Preço: R$ 109.990,00
 Ano/Modelo: 2017/2017
 Câmbio: Automático
 Combustível: Diesel
@@ -274,3 +274,31 @@ Quilometragem: 30000
 Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/139114.a438c3b215ca138.jpeg
 Descrição: (5 LUGARES), NOVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade e 1º dono, manual com todas revisões em Piracicaba e GARNTIA de FABRICA até Maio 2027, chave cópia, interior impecável, MIDIA e rodas originais, pneus novos, estepe sem uso. (C
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco com Regulagem Lombar, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Garantia de Fábrica, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático
+
+--- VEÍCULO 19 ---
+Nome: Chevrolet Montana
+Marca: Chevrolet
+Versão: 1.2 12V FLEX LTZ TURBO AUTOMÁTICO
+Preço: R$ 114.990,00
+Ano/Modelo: 2025/2025
+Câmbio: Automático
+Combustível: Flex
+Cor: Preto
+Portas: 4
+Quilometragem: 40000
+Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior em couro perfeito, MIDIA e rodas aro 17 originais, pneus novos, estepe sem uso, (Carro MUITO NOVO MESMO, SEM RETOQUES NA PINTURA).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Lona Marítima, Multimídia, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento
+
+--- VEÍCULO 20 ---
+Nome: Fiat Fastback
+Marca: Fiat
+Versão: 1.0 12V 4P FLEX AUDACE HYBRID 200 TURBO AUTOMÁTICO CVT
+Preço: R$ 111.990,00
+Ano/Modelo: 2025/2025
+Câmbio: Automático
+Combustível: Híbrido e Flex
+Cor: Cinza
+Portas: 4
+Quilometragem: 50000
+Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA e rodas aro 18 originais, pneus novos, estepe sem uso. (Carro MUITO NOVO MESMO, TODO ORIGINAL).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos
