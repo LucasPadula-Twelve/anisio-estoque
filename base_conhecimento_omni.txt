@@ -1,7 +1,7 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 18/06/2026 às 09:03
-Total de veículos disponíveis: 20
+Atualizado em: 19/06/2026 às 09:05
+Total de veículos disponíveis: 22
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
 ============================================================
@@ -286,6 +286,7 @@ Combustível: Flex
 Cor: Preto
 Portas: 4
 Quilometragem: 40000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/139706.0965e05b50c4312.jpeg
 Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior em couro perfeito, MIDIA e rodas aro 17 originais, pneus novos, estepe sem uso, (Carro MUITO NOVO MESMO, SEM RETOQUES NA PINTURA).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Lona Marítima, Multimídia, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento
 
@@ -300,5 +301,36 @@ Combustível: Híbrido e Flex
 Cor: Cinza
 Portas: 4
 Quilometragem: 50000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/139712.af0c4bfb243ad01.jpeg
 Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA e rodas aro 18 originais, pneus novos, estepe sem uso. (Carro MUITO NOVO MESMO, TODO ORIGINAL).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos
+
+--- VEÍCULO 21 ---
+Nome: Hyundai HB 20 Sedan
+Marca: Hyundai
+Versão: 1.0 12V 4P FLEX TGDI TURBO COMFORT PLUS AUTOMÁTICO
+Preço: R$ 92.990,00
+Ano/Modelo: 2024/2025
+Câmbio: Automático
+Combustível: Flex
+Cor: Prata
+Portas: 4
+Quilometragem: 30000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/139718.408b2638e016b2f.jpeg
+Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual com revisão em Piracicaba e GARANTIA de FABRICA, chave cópia, interior impecável, MIDIA e rodas aro 15 originais, pneus novos, estepe sem uso. (Carro MUITO NOVO MESMO, com GARANTIA 
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Garantia de Fábrica, GPS, Insul Film, Multimídia, Revisado Concessionária, Rodas de Liga Leves
+
+--- VEÍCULO 22 ---
+Nome: Hyundai HB 20 Hatch
+Marca: Hyundai
+Versão: 1.0 12V 4P FLEX COMFORT PLUS
+Preço: R$ 81.990,00
+Ano/Modelo: 2025/2026
+Câmbio: Manual
+Combustível: Flex
+Cor: Branco
+Portas: 4
+Quilometragem: 15000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/139785.a0c9facfb976213.jpeg
+Descrição: NIVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual com revisão em Piracicaba e GARANTIA de FABRICA, chave cópia, MIDIA original, pneus novos, estepe sem uso. (Carro ZERO MESMO, SÓ 15.000 Km RODADOS e GARANTIA de FABRICA).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Freios ABS, Garantia de Fábrica, GPS, Limpador Traseiro, Multimídia, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos, Vidros Verdes, Volante com Regulagem de Altura
