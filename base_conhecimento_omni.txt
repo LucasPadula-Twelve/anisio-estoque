@@ -1,6 +1,6 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 19/06/2026 às 09:05
+Atualizado em: 20/06/2026 às 09:06
 Total de veículos disponíveis: 22
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
@@ -246,21 +246,6 @@ Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, LAUDO APROVADO 
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento
 
 --- VEÍCULO 17 ---
-Nome: Volkswagen Nivus
-Marca: Volkswagen
-Versão: 1.0 4P FLEX 200 TSI HIGHLINE AUTOMÁTICO
-Preço: R$ 107.990,00
-Ano/Modelo: 2022/2023
-Câmbio: Automático
-Combustível: Flex
-Cor: Vinho
-Portas: 4
-Quilometragem: 72000
-Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/138947.0c6a2e26fc3a931.jpeg
-Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, manual com todas revisões na concessionária, chave cópia, interior em couro impecável, MIDIA e rodas aro 17 originais, 4 pneus novos, estepe sem uso. (Carro MUITO NOVO MESMO, NUNCA FOI DE LOCADORA).
-Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco com Regulagem Lombar, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Neblina, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos
-
---- VEÍCULO 18 ---
 Nome: Citroen C3 Aircross
 Marca: Citroen
 Versão: 1.0 12V 4P FLEX FEEL TURBO 200 AUTOMÁTICO CVT
@@ -275,7 +260,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/139114.a438c3
 Descrição: (5 LUGARES), NOVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade e 1º dono, manual com todas revisões em Piracicaba e GARNTIA de FABRICA até Maio 2027, chave cópia, interior impecável, MIDIA e rodas originais, pneus novos, estepe sem uso. (C
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco com Regulagem Lombar, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Garantia de Fábrica, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático
 
---- VEÍCULO 19 ---
+--- VEÍCULO 18 ---
 Nome: Chevrolet Montana
 Marca: Chevrolet
 Versão: 1.2 12V FLEX LTZ TURBO AUTOMÁTICO
@@ -290,7 +275,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/139706.0965e0
 Descrição: IMPECÁVEL, toda original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior em couro perfeito, MIDIA e rodas aro 17 originais, pneus novos, estepe sem uso, (Carro MUITO NOVO MESMO, SEM RETOQUES NA PINTURA).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Lona Marítima, Multimídia, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento
 
---- VEÍCULO 20 ---
+--- VEÍCULO 19 ---
 Nome: Fiat Fastback
 Marca: Fiat
 Versão: 1.0 12V 4P FLEX AUDACE HYBRID 200 TURBO AUTOMÁTICO CVT
@@ -305,7 +290,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/139712.af0c4b
 Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior impecável, MIDIA e rodas aro 18 originais, pneus novos, estepe sem uso. (Carro MUITO NOVO MESMO, TODO ORIGINAL).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos
 
---- VEÍCULO 21 ---
+--- VEÍCULO 20 ---
 Nome: Hyundai HB 20 Sedan
 Marca: Hyundai
 Versão: 1.0 12V 4P FLEX TGDI TURBO COMFORT PLUS AUTOMÁTICO
@@ -320,7 +305,7 @@ Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/139718.408b26
 Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual com revisão em Piracicaba e GARANTIA de FABRICA, chave cópia, interior impecável, MIDIA e rodas aro 15 originais, pneus novos, estepe sem uso. (Carro MUITO NOVO MESMO, com GARANTIA 
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Garantia de Fábrica, GPS, Insul Film, Multimídia, Revisado Concessionária, Rodas de Liga Leves
 
---- VEÍCULO 22 ---
+--- VEÍCULO 21 ---
 Nome: Hyundai HB 20 Hatch
 Marca: Hyundai
 Versão: 1.0 12V 4P FLEX COMFORT PLUS
@@ -334,3 +319,18 @@ Quilometragem: 15000
 Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/139785.a0c9facfb976213.jpeg
 Descrição: NIVÍSSIMO, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual com revisão em Piracicaba e GARANTIA de FABRICA, chave cópia, MIDIA original, pneus novos, estepe sem uso. (Carro ZERO MESMO, SÓ 15.000 Km RODADOS e GARANTIA de FABRICA).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Freios ABS, Garantia de Fábrica, GPS, Limpador Traseiro, Multimídia, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos, Vidros Verdes, Volante com Regulagem de Altura
+
+--- VEÍCULO 22 ---
+Nome: Volkswagen Nivus
+Marca: Volkswagen
+Versão: 1.0 4P FLEX 200 TSI HIGHLINE TURBO AUTOMÁTICO
+Preço: R$ 111.990,00
+Ano/Modelo: 2024/2024
+Câmbio: Automático
+Combustível: Flex
+Cor: Cinza
+Portas: 4
+Quilometragem: 37000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/139836.3baf8d8c5b4f728.jpeg
+Descrição: IMPECÁVEL, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior em couro perfeito, MIDIA e rodas aro 17 originais, pneus novos, estepe sem uso. (Carro MUITO NOVO).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos
