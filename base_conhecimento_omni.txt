@@ -1,7 +1,7 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 26/06/2026 às 09:07
-Total de veículos disponíveis: 22
+Atualizado em: 27/06/2026 às 09:02
+Total de veículos disponíveis: 23
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
 ============================================================
@@ -334,3 +334,18 @@ Quilometragem: 37000
 Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/139836.3baf8d8c5b4f728.jpeg
 Descrição: IMPECÁVEL, todo original, sem detalhes na pintura, nunca bateu, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior em couro perfeito, MIDIA e rodas aro 17 originais, pneus novos, estepe sem uso. (Carro MUITO NOVO).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Áudio - Sistema de Som, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, GPS, Limpador Traseiro, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos
+
+--- VEÍCULO 23 ---
+Nome: Volkswagen Polo Hatch
+Marca: Volkswagen
+Versão: 1.0 4P MPI TRACK
+Preço: R$ 67.990,00
+Ano/Modelo: 2023/2024
+Câmbio: Manual
+Combustível: Flex
+Cor: Branco
+Portas: 4
+Quilometragem: 70000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/140301.6844523448c631b.jpeg
+Descrição: IMPECÁVEL, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, nunca foi de locadora, manual, chave cópia, interior perfeito, SOM original, pneus novos, estepe sem uso. (Carro MUITO CONSERVADO MESMO).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Direção Hidráulica, Estepe sem Uso, Limpador Traseiro, Trava Elétricas, Vidros Elétricos, Vidros Verdes, Volante com Regulagem de Altura
