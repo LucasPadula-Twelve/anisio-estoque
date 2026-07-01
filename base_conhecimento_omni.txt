@@ -1,6 +1,6 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 30/06/2026 às 09:05
+Atualizado em: 01/07/2026 às 09:03
 Total de veículos disponíveis: 24
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
@@ -361,5 +361,6 @@ Combustível: Flex
 Cor: Cinza
 Portas: 4
 Quilometragem: 41000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/140442.ac1203dfe8cd54d.jpeg
 Descrição: NOVÍSSIMO, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual com todas revisões em Piracicaba e GARANTIA de FABRICA até janeira de 2034 (10 anos), chave cópia, interior em couro perfeito, MIDIA e rodas aro 17 originais, estepe sem uso. (Carro IMPECÁVEL ME
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Bancos em Couro, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Estepe sem Uso, Farol de Milha, Farol de Neblina, Freios ABS, Garantia de Fábrica, GPS, Insul Film, Multimídia, Retrovisor Fotocromático, Retrovisores Elétricos, Revisado Concessionária
