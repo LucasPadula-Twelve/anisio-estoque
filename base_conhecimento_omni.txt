@@ -1,6 +1,6 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 05/07/2026 às 09:06
+Atualizado em: 07/07/2026 às 09:03
 Total de veículos disponíveis: 26
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
@@ -174,7 +174,7 @@ Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de
 Nome: Volkswagen T-Cross
 Marca: Volkswagen
 Versão: 1.0 4P 200 TSI FLEX AUTOMÁTICO
-Preço: R$ 117.990,00
+Preço: R$ 114.990,00
 Ano/Modelo: 2024/2025
 Câmbio: Automático
 Combustível: Flex
