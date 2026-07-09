@@ -1,6 +1,6 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 08/07/2026 às 09:04
+Atualizado em: 09/07/2026 às 09:02
 Total de veículos disponíveis: 24
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
