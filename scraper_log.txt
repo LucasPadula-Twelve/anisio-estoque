@@ -2075,3 +2075,16 @@ fatal: Authentication failed for 'https://github.com/LucasPadula-Twelve/anisio-e
 [2026-07-09 09:02:03] ============================================================
 [2026-07-09 09:02:03] 
 [OK] Scraper concluído com sucesso: 24 veículos
+[2026-07-10 09:03:26] ============================================================
+[2026-07-10 09:03:26] SCRAPER ANÍSIO AUTOMÓVEIS - Feed XML Integra Carros
+[2026-07-10 09:03:26] Data: 2026-07-10 09:03:26
+[2026-07-10 09:03:26] Fonte: https://cliente.integracarros.com.br/site/24cde81a05336ba
+[2026-07-10 09:03:26] ============================================================
+[2026-07-10 09:03:26] Baixando feed XML: https://cliente.integracarros.com.br/site/24cde81a05336ba
+[2026-07-10 09:03:28] Feed baixado com sucesso: 77161 bytes
+[2026-07-10 09:03:28] Parseando feed XML...
+[2026-07-10 09:03:28] Total de veículos no feed: 24
+[2026-07-10 09:03:28] Comparando com estoque anterior...
+[2026-07-10 09:03:28] Estoque salvo: /home/ubuntu/anisio-estoque/estoque_atual.json
+[2026-07-10 09:03:28] Base de conhecimento gerada: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt (24 veículos)
+[2026-07-10 09:03:28] CSV gerado: /home/ubuntu/anisio-estoque/estoque_atual.csv
