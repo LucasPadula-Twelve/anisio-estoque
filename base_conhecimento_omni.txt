@@ -1,7 +1,7 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 17/07/2026 às 09:05
-Total de veículos disponíveis: 23
+Atualizado em: 18/07/2026 às 09:05
+Total de veículos disponíveis: 24
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
 ============================================================
@@ -349,3 +349,17 @@ Quilometragem: 83000
 Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/141364.3adc7340c10276d.jpeg
 Descrição: IMPECÁVEL, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, MIDIA e rodas originais, pneus novos. (Carro MUITO CONSERVADO MESMO).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Automático, CD Player Original, Controle de Som no Volante, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Farol de Milha, Freios ABS, GPS, Insul Film, Limpador Traseiro, Multimídia, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento, Trava Elétricas
+
+--- VEÍCULO 24 ---
+Nome: Ford Ka + Sedan
+Marca: Ford
+Versão: 1.5 12V 4P FLEX TI-VCT SE PLUS
+Preço: R$ 47.990,00
+Ano/Modelo: 2018/2018
+Câmbio: Manual
+Combustível: Flex
+Cor: Prata
+Portas: 4
+Quilometragem: 101000
+Descrição: IMPECÁVEL, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, pneus novos. (Carro MUITO CONSERVADO MESMO, MOTOR 1.5 ).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Desembaçador Traseiro, GPS, Trava Elétricas, Vidros Elétricos, Vidros Verdes, Volante com Regulagem de Altura
