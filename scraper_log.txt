@@ -2227,3 +2227,17 @@ fatal: Authentication failed for 'https://github.com/LucasPadula-Twelve/anisio-e
 [2026-07-19 09:02:13] Estoque salvo: /home/ubuntu/anisio-estoque/estoque_atual.json
 [2026-07-19 09:02:13] Base de conhecimento gerada: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt (24 veículos)
 [2026-07-19 09:02:13] CSV gerado: /home/ubuntu/anisio-estoque/estoque_atual.csv
+[2026-07-19 09:02:14] Publicado no GitHub com sucesso
+[2026-07-19 09:02:14] URL pública: https://raw.githubusercontent.com/LucasPadula-Twelve/anisio-estoque/main/base_conhecimento_omni.txt
+[2026-07-19 09:02:14] 
+[2026-07-19 09:02:14] ============================================================
+[2026-07-19 09:02:14] RESUMO DA EXECUÇÃO
+[2026-07-19 09:02:14]   Fonte: Feed XML Integra Carros
+[2026-07-19 09:02:14]   Veículos no estoque: 24
+[2026-07-19 09:02:14]   Novos: 0
+[2026-07-19 09:02:14]   Vendidos: 0
+[2026-07-19 09:02:14]   Base de conhecimento: /home/ubuntu/anisio-estoque/base_conhecimento_omni.txt
+[2026-07-19 09:02:14]   CSV: /home/ubuntu/anisio-estoque/estoque_atual.csv
+[2026-07-19 09:02:14] ============================================================
+[2026-07-19 09:02:14] 
+[OK] Scraper concluído com sucesso: 24 veículos
