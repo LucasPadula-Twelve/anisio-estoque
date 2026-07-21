@@ -1,7 +1,7 @@
 ============================================================
 BASE DE CONHECIMENTO - ESTOQUE ANÍSIO AUTOMÓVEIS
-Atualizado em: 19/07/2026 às 09:02
-Total de veículos disponíveis: 24
+Atualizado em: 21/07/2026 às 09:05
+Total de veículos disponíveis: 25
 Endereço: Rua Armando Sales de Oliveira, 1000 - Piracicaba/SP
 Horário: Seg-Sex 8h-18h | Sáb 8h-12h
 ============================================================
@@ -364,3 +364,18 @@ Quilometragem: 101000
 Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/141806.04be5ab162a2afe.jpeg
 Descrição: IMPECÁVEL, todo original, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, pneus novos. (Carro MUITO CONSERVADO MESMO, MOTOR 1.5 ).
 Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Manual, CD Player Original, Desembaçador Traseiro, GPS, Trava Elétricas, Vidros Elétricos, Vidros Verdes, Volante com Regulagem de Altura
+
+--- VEÍCULO 25 ---
+Nome: Toyota Corolla
+Marca: Toyota
+Versão: 2.0 16V 4P FLEX GLI DIRECT SHIFT AUTOMÁTICO CVT
+Preço: R$ 116.990,00
+Ano/Modelo: 2021/2022
+Câmbio: Automático
+Combustível: Flex
+Cor: Prata
+Portas: 4
+Quilometragem: 82000
+Foto: https://cliente.integracarros.com.br/imagens/veiculos/public/141899.9dc1b58572c7cf9.jpeg
+Descrição: IMPECÁVEL, sem detalhes na pintura, LAUDO APROVADO SEM RESTRIÇÕES, carro da cidade, manual, chave cópia, interior perfeito, MIDIA , rodas, pneus novos.(Carro MUITO CONSERVADO).
+Opcionais: 2 Air Bags, Alarme, Ar Condicionado, Banco Motorista com Regulagem de Altura, Câmbio Automático, Desembaçador Traseiro, Direção Hidráulica, Estepe sem Uso, Freios ABS, Insul Film, Multimídia, Retrovisores Elétricos, Rodas de Liga Leves, Sensor de Estacionamento, Trava Elétricas, Vidros Elétricos, Vidros Verdes, Volante com Regulagem de Altura
